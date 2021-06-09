@@ -14,6 +14,12 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
 * Markdown Editor
   * https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor
 
+#### VS 단축키
+* 이름 바꾸기
+  * Ctrl + R, Ctrl + R
+* 코드 포멧팅
+  * Ctrl + K, Ctrl + D(전체) 또는 F(선택부분)
+
 
 #### 기존 Github 프로젝트
 * Visual Studio Code + MinGW GCC로 진행하던 프로젝트
