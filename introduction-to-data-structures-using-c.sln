@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedRead", "Chapter04\LinkedRead\LinkedRead.vcxproj", "{99DF6FF9-7EFB-42F7-A318-B96E9986E279}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,12 +33,21 @@ Global
 		{C038D0AC-FAB9-44C7-B1BF-A838C3AF65B7}.Release|x64.Build.0 = Release|x64
 		{C038D0AC-FAB9-44C7-B1BF-A838C3AF65B7}.Release|x86.ActiveCfg = Release|Win32
 		{C038D0AC-FAB9-44C7-B1BF-A838C3AF65B7}.Release|x86.Build.0 = Release|Win32
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Debug|x64.ActiveCfg = Debug|x64
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Debug|x64.Build.0 = Debug|x64
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Debug|x86.ActiveCfg = Debug|Win32
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Debug|x86.Build.0 = Debug|Win32
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Release|x64.ActiveCfg = Release|x64
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Release|x64.Build.0 = Release|x64
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Release|x86.ActiveCfg = Release|Win32
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C038D0AC-FAB9-44C7-B1BF-A838C3AF65B7} = {7DBCA76F-9B1C-44FE-88EF-A4081158F6AD}
+		{99DF6FF9-7EFB-42F7-A318-B96E9986E279} = {7DBCA76F-9B1C-44FE-88EF-A4081158F6AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EBA6E55-C3F5-4C42-8D7D-2689469B7853}

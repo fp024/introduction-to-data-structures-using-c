@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayRead.c">
+    <ClCompile Include="LinkedRead.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
