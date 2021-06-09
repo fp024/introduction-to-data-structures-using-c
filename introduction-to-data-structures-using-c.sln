@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter04", "Chapter04", "{7DBCA76F-9B1C-44FE-88EF-A4081158F6AD}"
+	ProjectSection(SolutionItems) = preProject
+		Chapter04\README.md = Chapter04\README.md
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayRead", "Chapter04\ArrayRead\ArrayRead.vcxproj", "{C038D0AC-FAB9-44C7-B1BF-A838C3AF65B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48F4AAE2-165E-4225-8B62-292C79897864}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
