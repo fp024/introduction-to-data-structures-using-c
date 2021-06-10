@@ -46,12 +46,18 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
   * 이 내용은 좀 더 알아야 진행이 될 것 같다.
   * https://docs.microsoft.com/ko-kr/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-160
 * 단순하게 빈프로젝트에서 DLL 생성하는 식으로는 사용이 안되었음.
+* C++ 기반이라서 잘되는 것 같다. ㅠㅠ
 
 
 #### 출력디렉토리 변경
 실행파일이 솔루션 루트에 공통적으로 생성되어, 챕터별로 나누기 위해 아래처럼 설정을 변경
 * 구성속성 -> 일반 -> 출력 디렉토리
   * `$(SolutionDir)Chapter04\$(Platform)\$(Configuration)\`
+
+#### 기타
+* 확장자를 cpp에서 c로 바꿀 것
+  * 프로젝트를 신규 생성하다보면 기본 추가되는 파일이 cpp인데, cpp확장자를 유지하면서 c로 빌드한 정적 라이브러리를 빌드하면 링크에러가 난다.  
+    => 확장자를 꼭 바꿔주도록 하자!
 
 
 #### 기존 Github 프로젝트

@@ -1,9 +1,19 @@
-#pragma once
+#ifndef __D_LINKED_LIST_H__
+#define __D_LINKED_LIST_H__
 
 #define TRUE	1
 #define FALSE	0
 
+#ifdef _USE_CUSTOM_DATATYPE
+#include "point.h"
+// Array에 있는 타입을그대로 쓰면 int가됨 
+// 64비트 환경에서 주소값이 8바이트인데, 4바이트 int형에 주소형인 Point * 을 넣으려믄 동작이 있어서,
+// 아래와 같이 처리, 컴파일시 Point.h를 먼저 컴파일 해야함.
+typedef Point* LData;
+#else
 typedef int LData;
+#endif
+
 
 typedef struct _node {
 	LData data;
@@ -11,10 +21,11 @@ typedef struct _node {
 } Node;
 
 typedef struct _linkedList {
-	Node* head;
-	Node* cur;
-	Node* tail;
-	int (*comp)(LData d1, LData d2);
+	Node* head;		// 더미 노드를 가리키는 멤버
+	Node* cur;		// 참조 및 삭제를 돕는 멤버
+	Node* before;	// 삭제를 돕는 멤버
+	int numOfData;	// 저장된 데이터의 수를 기록하기 위한 멤버
+	int (*comp)(LData d1, LData d2);	// 정렬의 기준을 등록하기 위한 멤버
 } LinkedList;
 
 typedef LinkedList List;
@@ -87,5 +98,6 @@ int LCount(List* plist);
  * @param plist	리스트 주소
  * @param comp	정렬의 기준이 되는 함수 포인터
  */
-void SetSortRule(List* plist, int(*comp)(LData d1, LData d2));
+void SetSortRule(List* plist, int (*comp)(LData d1, LData d2));
 
+#endif
