@@ -1,14 +1,4 @@
-﻿/**
- * 문제 04-1 [연결 리스트 관련 코드에 익숙해지기]
- * 
- * 새 노드를 연결 리스트의 코리가 아닌 머리에 추가한다.
- * 
- *   3->2->7->8  순으로 입력하면...
- *   5->8->7->3 순으로 저장이 되도록 예제를 변경한다.
- * 
- */
-
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct _node {
@@ -16,13 +6,26 @@ typedef struct _node {
 	struct _node* next;
 } Node;
 
+
 int main(void) {
 	Node* head = NULL;
-	Node* tail = NULL;
 	Node* cur = NULL;
+	Node* tail = NULL;
+	Node* dummy = (Node*)malloc(sizeof(Node));
+
+	if (dummy == NULL) {
+		return -1;
+	}
+
+	dummy->data = -1;
+	dummy->next = NULL;
+
+	tail = head = dummy;
+
 
 	Node* newNode = NULL;
 	int readData;
+
 
 	// 데이터를 입력 받는 과정
 	while (1) {
@@ -43,27 +46,17 @@ int main(void) {
 		newNode->data = readData;
 		newNode->next = NULL;
 
-		if (head == NULL) {
-			head = newNode;
-			tail = newNode;
-		}
-		else {
-			//tail->next = newNode;
-			newNode->next = head;  // 신규노드의 다음이 기존의 head가 되도록 한다.
-		}
-		// tail = newNode;
-		head = newNode; // 처리가 된후 head는 신규노드가 되도록 한다.
+		tail->next = newNode;
+		tail = newNode;
 	}
 
 	// 입력받은 데이터의 출력 과정
 	printf("입력 받은 데이터의 전체 출력! \n");
-	if (head == NULL) {
+	if (head->next == NULL) {
 		printf("저장된 자연수가 존재하지 않습니다. \n");
 	}
 	else {
 		cur = head;
-		printf("%d ", cur->data); // 첫 번째 데이터 출력
-
 		while (cur->next != NULL) {
 			cur = cur->next;
 			printf("%d ", cur->data);
@@ -71,17 +64,13 @@ int main(void) {
 		printf("\n\n");
 
 		// 메모리의 해제과정
-		if (head == NULL) {
+		if (head->next == NULL) {
 			return 0;
 		}
 		else {
-			Node* delNode = head;
+			Node* delNode = head; // head는 더미를 가리키고 있음.
 			Node* delNextNode = head->next;
-
-			printf("%d을(를) 삭제합니다. \n", head->data);
-			free(delNode); // 첫번째 노드 삭제
-
-			while (delNextNode != NULL) { // 두 번째 이후 노드 삭제
+			while (delNextNode != NULL) { // 더미 다음의 두 번째 이후 노드 삭제
 				delNode = delNextNode;
 				delNextNode = delNextNode->next;
 

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{99df6ff9-7efb-42f7-a318-b96e9986e279}</ProjectGuid>
-    <RootNamespace>LinkedRead</RootNamespace>
+    <ProjectGuid>{11d9efb5-20aa-4aba-a94e-9e77b59db03a}</ProjectGuid>
+    <RootNamespace>ex042</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedRead.c" />
+    <ClCompile Include="ex04-2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
