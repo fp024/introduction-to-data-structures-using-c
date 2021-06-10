@@ -8,7 +8,6 @@ int WhoISPrecede(LData d1, LData d2) {
 	else {
 		return 1; // d2가 정렬 순서상 앞서거나 같다.
 	}
-
 }
 
 
@@ -16,7 +15,9 @@ int main(void) {
 	// 리스트의 생성 및 초기화
 	List list;
 	int data;
+
 	ListInit(&list);
+	SetSortRule(&list, &WhoISPrecede); // 정렬의 기준을 등록.
 
 	// 5개의 데이터를 저장
 	LInsert(&list, 11);
