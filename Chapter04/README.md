@@ -1,27 +1,27 @@
-## Chapter 04 ¿¬°á ¸®½ºÆ® (Linked List) 2
+## Chapter 04 ì—°ê²° ë¦¬ìŠ¤íŠ¸ (Linked List) 2
 
-### 04-1 ¿¬°á¸®½ºÆ®ÀÇ °³³äÀûÀÎ ÀÌÇØ
-* ¹è¿­Àº ¸Þ¸ð¸®ÀÇ Æ¯¼ºÀÌ Á¤ÀûÀÌ¿©¼­, ¸Þ¸ð¸®ÀÇ ±æÀÌ¸¦ º¯°æÇÏ´Â °ÍÀÌ ºÒ°¡´ÉÇÔ
+### 04-1 ì—°ê²°ë¦¬ìŠ¤íŠ¸ì˜ ê°œë…ì ì¸ ì´í•´
+* ë°°ì—´ì€ ë©”ëª¨ë¦¬ì˜ íŠ¹ì„±ì´ ì •ì ì´ì—¬ì„œ, ë©”ëª¨ë¦¬ì˜ ê¸¸ì´ë¥¼ ë³€ê²½í•˜ëŠ” ê²ƒì´ ë¶ˆê°€ëŠ¥í•¨
 
 
-### 04-2 ´Ü¼ø ¿¬°á ¸®½ºÆ®ÀÇ ADT¿Í ±¸Çö
-* Áö±Ý »óÅÂ¿¡¼­´Â ¸®½ºÆ®ÀÇ Å¸ÀÔÀ» ¼±ÅÃÀûÀ¸·Î º¯°æÇÏ±â°¡ Èûµé¾îº¸ÀÎ´Ù.
-  * ex04-3À» ºôµåÇÏ±â À§ÇØ¼­´Â DLinkedListLibrary ÇÁ·ÎÁ§Æ®¿¡ _USE_CUSTOM_DATATYPE ¸ÞÅ©·Î¸¦ ÁÖ°í ºôµåÇØ¾ßÇÔ.
-    * ±¸¼º¼Ó¼º -> C/C++ -> ÀüÃ³¸®±â Ç×¸ñ¿¡ _USE_CUSTOM_DATATYPE ¸ÞÅ©·Î¸¦ Ãß°¡ÇÏ°í Á¤Àû ¶óÀÌºê·¯¸® ºôµå
-  * DLinkedListMain ÇÁ·ÎÁ§Æ®¸¦ ºôµåÇÒ ¶§´Â À§ÀÇ ¸ÞÅ©·Î¸¦ »©°í Á¤Àû ¶óÀÌºê·¯¸®¸¦ ºôµå
+### 04-2 ë‹¨ìˆœ ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ ADTì™€ êµ¬í˜„
+* ì§€ê¸ˆ ìƒíƒœì—ì„œëŠ” ë¦¬ìŠ¤íŠ¸ì˜ íƒ€ìž…ì„ ì„ íƒì ìœ¼ë¡œ ë³€ê²½í•˜ê¸°ê°€ íž˜ë“¤ì–´ë³´ì¸ë‹¤.
+  * ex04-3ì„ ë¹Œë“œí•˜ê¸° ìœ„í•´ì„œëŠ” DLinkedListLibrary í”„ë¡œì íŠ¸ì— _USE_CUSTOM_DATATYPE ë©”í¬ë¡œë¥¼ ì£¼ê³  ë¹Œë“œí•´ì•¼í•¨.
+    * êµ¬ì„±ì†ì„± -> C/C++ -> ì „ì²˜ë¦¬ê¸° í•­ëª©ì— _USE_CUSTOM_DATATYPE ë©”í¬ë¡œë¥¼ ì¶”ê°€í•˜ê³  ì •ì  ë¼ì´ë¸ŒëŸ¬ë¦¬ ë¹Œë“œ
+  * DLinkedListMain í”„ë¡œì íŠ¸ë¥¼ ë¹Œë“œí•  ë•ŒëŠ” ìœ„ì˜ ë©”í¬ë¡œë¥¼ ë¹¼ê³  ì •ì  ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¹Œë“œ
 
-* `Point*`À¸·Î »ç¿ëÇÏ´Â »ç¿ëÃ³ ÇÁ·ÎÁ§Æ® ºôµå½Ã¿¡µµ ¸ÞÅ©·Î¸¦ ¼±¾ðÇØ¾ßÇÑ´Ù.
+* `Point*`ìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” ì‚¬ìš©ì²˜ í”„ë¡œì íŠ¸ ë¹Œë“œì‹œì—ë„ ë©”í¬ë¡œë¥¼ ì„ ì–¸í•´ì•¼í•œë‹¤.
 
-¸®½ºÆ®ÀÇ ¿ä¼Ò¸¦ °£ÆíÇÏ°Ô º¯°æÇÒ ¼ö ÀÖ¾î¾ßÇÒ °Í °°Àºµ¥...
-3Àå ÁøÇàÇÒ ¶§ ÀüÃ³¸®±â ¿É¼ÇÀ» ÁöÁ¤ÇØ¼­ ºôµåÇÒ ¶§´Â MinGW È¯°æ¿¡¼­´Â  
-½ÇÇà½Ã ¿À·ù°¡³ªÁö ¾Ê¾ÒÀ¸³ª ºÎÁ¤È®ÇÑ ºÎºÐÀÌ ÀÖÀ» ¼ö ÀÖÀ» °Í °°´Ù.
+ë¦¬ìŠ¤íŠ¸ì˜ ìš”ì†Œë¥¼ ê°„íŽ¸í•˜ê²Œ ë³€ê²½í•  ìˆ˜ ìžˆì–´ì•¼í•  ê²ƒ ê°™ì€ë°...
+3ìž¥ ì§„í–‰í•  ë•Œ ì „ì²˜ë¦¬ê¸° ì˜µì…˜ì„ ì§€ì •í•´ì„œ ë¹Œë“œí•  ë•ŒëŠ” MinGW í™˜ê²½ì—ì„œëŠ”  
+ì‹¤í–‰ì‹œ ì˜¤ë¥˜ê°€ë‚˜ì§€ ì•Šì•˜ìœ¼ë‚˜ ë¶€ì •í™•í•œ ë¶€ë¶„ì´ ìžˆì„ ìˆ˜ ìžˆì„ ê²ƒ ê°™ë‹¤.
 
-°øÀ¯¶óÀÌºê·¯¸®()´Â ÀÌ¹Ì LData°¡ int Å¸ÀÔÀ¸·Î ºôµåµÇ¾ú´Âµ¥,
+ê³µìœ ë¼ì´ë¸ŒëŸ¬ë¦¬()ëŠ” ì´ë¯¸ LDataê°€ int íƒ€ìž…ìœ¼ë¡œ ë¹Œë“œë˜ì—ˆëŠ”ë°,
 * https://github.com/fp024/introduction-to-data-structures-using-c-by-yoon/tree/master/chapter03/arraylist
 
-¶óÀÌºê·¯¸® »ç¿ëÃ³¿¡¼­´Â `Point*` À¸·Î ½èÀ½.
+ë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš©ì²˜ì—ì„œëŠ” `Point*` ìœ¼ë¡œ ì¼ìŒ.
 
 
-### 04-3 ¿¬°á ¸®½ºÆ®ÀÇ Á¤·Ä »ðÀÔÀÇ ±¸Çö
-* ex04-4 ÇÁ·ÎÁ§Æ® ºôµå½Ã DLinkedListLibrary °¡ ¸ÕÀú _USE_CUSTOM_DATATYPE ¸ÞÅ©·Î¸¦ Àû¿ëÇØ¼­ ºôµå°¡ ¸ÕÀúµÇ¾ßÇÔ.
-  * ¹®Á¦ 4¹ø µ¿ÀÏ °æ¿ì¸¦ ±ôºýÇØ¼­ Æ²·È´Ù. µ¿ÀÏ °æ¿ì Á¶°ÇÀ» ¸í½ÃÀûÀ¸·Î ÁÖÁö¾Ê¾Æ ¿ÀÀÛµ¿ÇÔ. ¤Ð¤Ð
+### 04-3 ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ ì •ë ¬ ì‚½ìž…ì˜ êµ¬í˜„
+* ex04-4 í”„ë¡œì íŠ¸ ë¹Œë“œì‹œ DLinkedListLibrary ê°€ ë¨¼ì € _USE_CUSTOM_DATATYPE ë©”í¬ë¡œë¥¼ ì ìš©í•´ì„œ ë¹Œë“œê°€ ë¨¼ì €ë˜ì•¼í•¨.
+  * ë¬¸ì œ 4ë²ˆ ë™ì¼ ê²½ìš°ë¥¼ ê¹œë¹¡í•´ì„œ í‹€ë ¸ë‹¤. ë™ì¼ ê²½ìš° ì¡°ê±´ì„ ëª…ì‹œì ìœ¼ë¡œ ì£¼ì§€ì•Šì•„ ì˜¤ìž‘ë™í•¨. ã… ã… 

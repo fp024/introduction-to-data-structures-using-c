@@ -1,71 +1,71 @@
-## À±¼º¿ìÀÇ ¿­Ç÷ ÀÚ·á±¸Á¶ ½ºÅÍµð
-### Visual Studio 2019 ¸¦ »ç¿ëÇÏ¿© ÁøÇà
+## ìœ¤ì„±ìš°ì˜ ì—´í˜ˆ ìžë£Œêµ¬ì¡° ìŠ¤í„°ë”” - VS 2019
+### Visual Studio 2019 ë¥¼ ì‚¬ìš©í•˜ì—¬ ì§„í–‰
 
-Visaul Studio 2019¿¡¼­ GitÀ» ¾î¶»°Ô »ç¿ëÇÏ³ª ±Ã±ÝÇØ¼­, ÇÁ·ÎÁ§Æ® »ý¼ºÇØº½.
+Visaul Studio 2019ì—ì„œ Gitì„ ì–´ë–»ê²Œ ì‚¬ìš©í•˜ë‚˜ ê¶ê¸ˆí•´ì„œ, í”„ë¡œì íŠ¸ ìƒì„±í•´ë´„.
 
-### ÇÁ·ÎÁ§Æ® »ý¼º
-1. ¼Ö·ç¼ÇÀ¸·Î introduction-to-data-structures-using-c ¸¦ ÀÏ´Ü ¸¸µë.
-2. ¼Ö·ç¼Ç ÀÌÇÏ¿¡ Àå(Chapter)º°·Î Æú´õ ¸¸µë.
-3. ÇÏ³ªÀÇ Àå¿¡¼­´Â main ÇÔ¼ö ±âÁØÀ¸·Î´Â º°µµ ÇÁ·ÎÁ§Æ®·Î ¸¸µé¾î¾ß ÁøÇàÀÌ °£ÆíÇØº¸ÀÓ  
-    * ºôµå´Â °³º° ÇÁ·ÎÁ§Æ® º°·Î ºôµåÇÏ¸é µÉ °Í °°´Ù.
-4. gitignore´Â ·¹Æ÷ÁöÅä¸® »ý¼º½Ã ÀÚµ¿À¸·Î Àß ¸¸µé¾îÁü
+### í”„ë¡œì íŠ¸ ìƒì„±
+1. ì†”ë£¨ì…˜ìœ¼ë¡œ introduction-to-data-structures-using-c ë¥¼ ì¼ë‹¨ ë§Œë“¬.
+2. ì†”ë£¨ì…˜ ì´í•˜ì— ìž¥(Chapter)ë³„ë¡œ í´ë” ë§Œë“¬.
+3. í•˜ë‚˜ì˜ ìž¥ì—ì„œëŠ” main í•¨ìˆ˜ ê¸°ì¤€ìœ¼ë¡œëŠ” ë³„ë„ í”„ë¡œì íŠ¸ë¡œ ë§Œë“¤ì–´ì•¼ ì§„í–‰ì´ ê°„íŽ¸í•´ë³´ìž„  
+    * ë¹Œë“œëŠ” ê°œë³„ í”„ë¡œì íŠ¸ ë³„ë¡œ ë¹Œë“œí•˜ë©´ ë  ê²ƒ ê°™ë‹¤.
+4. gitignoreëŠ” ë ˆí¬ì§€í† ë¦¬ ìƒì„±ì‹œ ìžë™ìœ¼ë¡œ ìž˜ ë§Œë“¤ì–´ì§
 
 
-#### VS ÇÃ·¯±×ÀÎ ¼³Ä¡
+#### VS í”ŒëŸ¬ê·¸ì¸ ì„¤ì¹˜
 * Markdown Editor
   * https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor
 
-#### VS ´ÜÃàÅ°
-* ÀÌ¸§ ¹Ù²Ù±â
+#### VS ë‹¨ì¶•í‚¤
+* ì´ë¦„ ë°”ê¾¸ê¸°
   * Ctrl + R, Ctrl + R
-* ÄÚµå Æ÷¸äÆÃ
-  * Ctrl + K, Ctrl + D(ÀüÃ¼) ¶Ç´Â F(¼±ÅÃºÎºÐ)
+* ì½”ë“œ í¬ë©§íŒ…
+  * Ctrl + K, Ctrl + D(ì „ì²´) ë˜ëŠ” F(ì„ íƒë¶€ë¶„)
 
 
-#### Á¤Àû ¶óÀÌºê·¯¸® ¸¸µé±â
-* ¶óÀÌºê·¯¸® ÇÁ·ÎÁ§Æ® 
-  * ºó ÇÁ·ÎÁ§Æ®·Î ¸¸µç´ÙÀ½¿¡ ±¸¼º Çü½Ä¸¸ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç¿¡¼­ libÀ¸·Î º¯°æ
-    * ±¸¼º¼Ó¼º -> ÀÏ¹Ý -> ±¸¼ºÇü½Ä
-      * ¾ÖÇÃ¸®ÄÉÀÌ¼Ç(.exe) -> Á¤Àû¶óÀÌºê·¯¸®(.lib)
+#### ì •ì  ë¼ì´ë¸ŒëŸ¬ë¦¬ ë§Œë“¤ê¸°
+* ë¼ì´ë¸ŒëŸ¬ë¦¬ í”„ë¡œì íŠ¸ 
+  * ë¹ˆ í”„ë¡œì íŠ¸ë¡œ ë§Œë“ ë‹¤ìŒì— êµ¬ì„± í˜•ì‹ë§Œ ì• í”Œë¦¬ì¼€ì´ì…˜ì—ì„œ libìœ¼ë¡œ ë³€ê²½
+    * êµ¬ì„±ì†ì„± -> ì¼ë°˜ -> êµ¬ì„±í˜•ì‹
+      * ì• í”Œë¦¬ì¼€ì´ì…˜(.exe) -> ì •ì ë¼ì´ë¸ŒëŸ¬ë¦¬(.lib)
 
-* ¶óÀÌºê·¯¸® »ç¿ëÃ³ ÇÁ·ÎÁ§Æ® ¼³Á¤
-  * ÇØ´ç ¶óÀÌºê·¯¸®ÀÇ Çì´õ¸¦ »ç¿ëÇÏ±â À§ÇØ ÇÁ·ÎÁ§Æ®ÀÇ Ãß°¡ Æ÷ÇÔ µð·ºÅä¸®¿¡¼­ ¾Æ·¡¿Í °°Àº ½ÄÀ¸·Î ÁöÁ¤
-    * ±¸¼º¼Ó¼º -> C/C++ -> Ãß°¡Æ÷ÇÔµð·ºÅä¸®
+* ë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš©ì²˜ í”„ë¡œì íŠ¸ ì„¤ì •
+  * í•´ë‹¹ ë¼ì´ë¸ŒëŸ¬ë¦¬ì˜ í—¤ë”ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ í”„ë¡œì íŠ¸ì˜ ì¶”ê°€ í¬í•¨ ë””ë ‰í† ë¦¬ì—ì„œ ì•„ëž˜ì™€ ê°™ì€ ì‹ìœ¼ë¡œ ì§€ì •
+    * êµ¬ì„±ì†ì„± -> C/C++ -> ì¶”ê°€í¬í•¨ë””ë ‰í† ë¦¬
       * `$(SolutionDir)\Chapter04\DLinkedListLibrary`
-  * ¸µÄ¿ ¼³Á¤¿¡¼­ libÆÄÀÏ Ãß°¡
-    * ±¸¼º¼Ó¼º -> ¸µÄ¿ -> ÀÔ·Â
+  * ë§ì»¤ ì„¤ì •ì—ì„œ libíŒŒì¼ ì¶”ê°€
+    * êµ¬ì„±ì†ì„± -> ë§ì»¤ -> ìž…ë ¥
       * `$(SolutionDir)Chapter04\$(Platform)\$(Configuration)\DLinkedListLibrary.lib`
 
-* ¶óÀÌºê·¯¸® »ç¿ëÃ³ ÇÁ·ÎÁ§Æ® ºôµå Àü¿¡, ¶óÀÌºê·¯¸® ÇÁ·ÎÁ§Æ®°¡ ¸ÕÀú ºôµåµÉ ÇÊ¿ä°¡ ÀÖÀ½.
-  * ¼Ö·ç¼Ç ¼±ÅÃ»óÅÂ¿¡¼­ ¿À¸¥ÂÊ ¸Þ´º¸¦ ¿­¾î ÇÁ·ÎÁ§Æ® Á¾¼Ó¼ºÀ» ¼³Á¤ÇÑ´Ù. 
-    * ¶óÀÌºê·¯¸® »ç¿ëÃ³ ÇÁ·ÎÁ§Æ®°¡ ¶óÀÌºê·¯¸® ÇÁ·ÎÁ§Æ®¿¡ Á¾¼Ó µÇµµ·Ï ¼³Á¤.
+* ë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš©ì²˜ í”„ë¡œì íŠ¸ ë¹Œë“œ ì „ì—, ë¼ì´ë¸ŒëŸ¬ë¦¬ í”„ë¡œì íŠ¸ê°€ ë¨¼ì € ë¹Œë“œë  í•„ìš”ê°€ ìžˆìŒ.
+  * ì†”ë£¨ì…˜ ì„ íƒìƒíƒœì—ì„œ ì˜¤ë¥¸ìª½ ë©”ë‰´ë¥¼ ì—´ì–´ í”„ë¡œì íŠ¸ ì¢…ì†ì„±ì„ ì„¤ì •í•œë‹¤. 
+    * ë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš©ì²˜ í”„ë¡œì íŠ¸ê°€ ë¼ì´ë¸ŒëŸ¬ë¦¬ í”„ë¡œì íŠ¸ì— ì¢…ì† ë˜ë„ë¡ ì„¤ì •.
 
 
-#### µ¿Àû ¶óÀÌºê·¯¸® ¸¸µé±â
-* ¿¬½À: ÀÚÃ¼ µ¿Àû ¿¬°á ¶óÀÌºê·¯¸® ¸¸µé±â ¹× »ç¿ë(C++)
-  * ÀÌ ³»¿ëÀº Á» ´õ ¾Ë¾Æ¾ß ÁøÇàÀÌ µÉ °Í °°´Ù.
+#### ë™ì  ë¼ì´ë¸ŒëŸ¬ë¦¬ ë§Œë“¤ê¸°
+* ì—°ìŠµ: ìžì²´ ë™ì  ì—°ê²° ë¼ì´ë¸ŒëŸ¬ë¦¬ ë§Œë“¤ê¸° ë° ì‚¬ìš©(C++)
+  * ì´ ë‚´ìš©ì€ ì¢€ ë” ì•Œì•„ì•¼ ì§„í–‰ì´ ë  ê²ƒ ê°™ë‹¤.
   * https://docs.microsoft.com/ko-kr/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-160
-* ´Ü¼øÇÏ°Ô ºóÇÁ·ÎÁ§Æ®¿¡¼­ DLL »ý¼ºÇÏ´Â ½ÄÀ¸·Î´Â »ç¿ëÀÌ ¾ÈµÇ¾úÀ½.
-* C++ ±â¹ÝÀÌ¶ó¼­ Àß ¾ÈµÇ´Â °Í °°´Ù. ¤Ð¤Ð
-  * C++¿¡ ÀÍ¼÷ÇØ¼­ ÄÚµå ÀÚÃ¼¸¦ C++¿ëÀ¸·Î ¸¸µé¾î¾ß ¿øÇÒÇÒ °Í °°À½.
+* ë‹¨ìˆœí•˜ê²Œ ë¹ˆí”„ë¡œì íŠ¸ì—ì„œ DLL ìƒì„±í•˜ëŠ” ì‹ìœ¼ë¡œëŠ” ì‚¬ìš©ì´ ì•ˆë˜ì—ˆìŒ.
+* C++ ê¸°ë°˜ì´ë¼ì„œ ìž˜ ì•ˆë˜ëŠ” ê²ƒ ê°™ë‹¤. ã… ã… 
+  * C++ì— ìµìˆ™í•´ì„œ ì½”ë“œ ìžì²´ë¥¼ C++ìš©ìœ¼ë¡œ ë§Œë“¤ì–´ì•¼ ì›í• í•  ê²ƒ ê°™ìŒ.
 
 
-#### Ãâ·Âµð·ºÅä¸® º¯°æ
-½ÇÇàÆÄÀÏÀÌ ¼Ö·ç¼Ç ·çÆ®¿¡ °øÅëÀûÀ¸·Î »ý¼ºµÇ¾î, Ã©ÅÍº°·Î ³ª´©±â À§ÇØ ¾Æ·¡Ã³·³ ¼³Á¤À» º¯°æ
-* ±¸¼º¼Ó¼º -> ÀÏ¹Ý -> Ãâ·Â µð·ºÅä¸®
+#### ì¶œë ¥ë””ë ‰í† ë¦¬ ë³€ê²½
+ì‹¤í–‰íŒŒì¼ì´ ì†”ë£¨ì…˜ ë£¨íŠ¸ì— ê³µí†µì ìœ¼ë¡œ ìƒì„±ë˜ì–´, ì±•í„°ë³„ë¡œ ë‚˜ëˆ„ê¸° ìœ„í•´ ì•„ëž˜ì²˜ëŸ¼ ì„¤ì •ì„ ë³€ê²½
+* êµ¬ì„±ì†ì„± -> ì¼ë°˜ -> ì¶œë ¥ ë””ë ‰í† ë¦¬
   * `$(SolutionDir)Chapter04\$(Platform)\$(Configuration)\`
 
-#### ±âÅ¸
-* È®ÀåÀÚ¸¦ cpp¿¡¼­ c·Î ¹Ù²Ü °Í
-  * ÇÁ·ÎÁ§Æ®¸¦ ½Å±Ô »ý¼ºÇÏ´Ùº¸¸é ±âº» Ãß°¡µÇ´Â ÆÄÀÏÀÌ cppÀÎµ¥, cppÈ®ÀåÀÚ¸¦ À¯ÁöÇÏ¸é¼­ c·Î ºôµåÇÑ Á¤Àû ¶óÀÌºê·¯¸®¸¦ ºôµåÇÏ¸é ¸µÅ©¿¡·¯°¡ ³­´Ù.  
-    => È®ÀåÀÚ¸¦ ²À ¹Ù²ãÁÖµµ·Ï ÇÏÀÚ!
+#### ê¸°íƒ€
+* í™•ìž¥ìžë¥¼ cppì—ì„œ cë¡œ ë°”ê¿€ ê²ƒ
+  * í”„ë¡œì íŠ¸ë¥¼ ì‹ ê·œ ìƒì„±í•˜ë‹¤ë³´ë©´ ê¸°ë³¸ ì¶”ê°€ë˜ëŠ” íŒŒì¼ì´ cppì¸ë°, cppí™•ìž¥ìžë¥¼ ìœ ì§€í•˜ë©´ì„œ cë¡œ ë¹Œë“œí•œ ì •ì  ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¹Œë“œí•˜ë©´ ë§í¬ì—ëŸ¬ê°€ ë‚œë‹¤.  
+    => í™•ìž¥ìžë¥¼ ê¼­ ë°”ê¿”ì£¼ë„ë¡ í•˜ìž!
 
-* Windows 8.1 ¿¡¼­ `Microsoft Visual Stduio µð¹ö±× ÄÜ¼Ö`ÀÇ ±Û²ÃÀ» ¹Ù²Ù°í ½ÍÀ» ¶§...
-  * ÇÁ·Î±×·¥ ÁÂ»ó´Ü ¾ÆÀÌÄÜ Å¬¸¯ÈÄ `Defaults` ¿¡ ÀÖ´Â ºÎºÐ°ú `Properties` ¸¦  ¿­¾î ¸ðµÎ µ¿ÀÏÇÏ°Ô ±Û²ÃÀ» ¹Ù²ãÁØ´Ù.
+* Windows 8.1 ì—ì„œ `Microsoft Visual Stduio ë””ë²„ê·¸ ì½˜ì†”`ì˜ ê¸€ê¼´ì„ ë°”ê¾¸ê³  ì‹¶ì„ ë•Œ...
+  * í”„ë¡œê·¸ëž¨ ì¢Œìƒë‹¨ ì•„ì´ì½˜ í´ë¦­í›„ `Defaults` ì— ìžˆëŠ” ë¶€ë¶„ê³¼ `Properties` ë¥¼  ì—´ì–´ ëª¨ë‘ ë™ì¼í•˜ê²Œ ê¸€ê¼´ì„ ë°”ê¿”ì¤€ë‹¤.
 
 
-#### MinGW-GCC·Î ¼öÇàÇÏ´ø Github ÇÁ·ÎÁ§Æ®
-* Visual Studio Code + MinGW GCC·Î ÁøÇàÇÏ´ø ÇÁ·ÎÁ§Æ®
+#### MinGW-GCCë¡œ ìˆ˜í–‰í•˜ë˜ Github í”„ë¡œì íŠ¸
+* Visual Studio Code + MinGW GCCë¡œ ì§„í–‰í•˜ë˜ í”„ë¡œì íŠ¸
   * https://github.com/fp024/introduction-to-data-structures-using-c-by-yoon
-* Æ¯Á¤ Ã©ÅÍ¸¦ ¿Ô´Ù°¬´Ù ÁøÇàÇÏ¸é¼­ ÇØµµµÉ °Í °°´Ù.
-  * GCC ºôµå¸¦ À§ÇÑ ¹èÄ¡ÆÄÀÏ ¸¸µå´Â °ÍÀÌ³ª, Visual Studio 2019 ÇÁ·Î±×·¥¿¡¼­ ¼³Á¤À» ÇØ¼­ ºôµåÇÏ´Â °ÍÀÌ³ª µÑ´Ù ÇØºÁµµ ³ª»ÚÁø ¾ÊÀº °Í °°´Ù.
+* íŠ¹ì • ì±•í„°ë¥¼ ì™”ë‹¤ê°”ë‹¤ ì§„í–‰í•˜ë©´ì„œ í•´ë„ë  ê²ƒ ê°™ë‹¤.
+  * GCC ë¹Œë“œë¥¼ ìœ„í•œ ë°°ì¹˜íŒŒì¼ ë§Œë“œëŠ” ê²ƒì´ë‚˜, Visual Studio 2019 í”„ë¡œê·¸ëž¨ì—ì„œ ì„¤ì •ì„ í•´ì„œ ë¹Œë“œí•˜ëŠ” ê²ƒì´ë‚˜ ë‘˜ë‹¤ í•´ë´ë„ ë‚˜ì˜ì§„ ì•Šì€ ê²ƒ ê°™ë‹¤.
