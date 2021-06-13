@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "DLinkedList.h"
 
 int WhoISPrecede(LData d1, LData d2) {
