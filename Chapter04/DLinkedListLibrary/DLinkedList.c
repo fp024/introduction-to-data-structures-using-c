@@ -63,7 +63,7 @@ LData LRemove(List* plist) {
 	if (plist->before == plist->cur) {
 		fprintf(stderr, "LRemove함수는 연속으로 호출할 수 없습니다. LFirst 또는 LNext 함수 호출이 선행되야합니다.");
 		assert(FALSE);
-		return -1;
+		return NULL;
 	}
 
 	Node* removalNode = plist->cur;			// 소멸대상의 주소 값을 removalNode에 저장
