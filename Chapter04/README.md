@@ -16,7 +16,7 @@
 3장 진행할 때 전처리기 옵션을 지정해서 빌드할 때는 MinGW 환경에서는  
 실행시 오류가나지 않았으나 부정확한 부분이 있을 수 있을 것 같다.
 
-공유라이브러리()는 이미 LData가 int 타입으로 빌드되었는데,
+정적라이브러리(DLinkedList)는 이미 LData가 int 타입으로 빌드되었는데,
 * https://github.com/fp024/introduction-to-data-structures-using-c-by-yoon/tree/master/chapter03/arraylist
 
 라이브러리 사용처에서는 `Point*` 으로 썼음.
