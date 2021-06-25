@@ -21,10 +21,10 @@
    * @param name 이름
    * @param days 일수
    *
-   * @return 일(dyas) 뒤에 누가 당직을 서는지에 검색이 된경우 TRUE,
-   *         찾을 수 없을 경우 FALSE 반환
+   * @return 일(dyas) 뒤에 누가 당직을 서는지에 검색이 된경우 해당 직원의 정보 (Data: Employee*) 반환
+   *         찾을 수 없을 경우 NULL 반환
    */
-int FoundNextNightShift(List* plist, Data* nextShift, char* name, int days);
+Data FoundNextNightShift(List* plist, char* name, int days);
 
 
 /**
@@ -76,21 +76,20 @@ int main(void) {
     // 
 
     Data nextShift = NULL;
-    int found = FoundNextNightShift(&list, &nextShift, "AAA", 3);
+    nextShift = FoundNextNightShift(&list, "AAA", 3);
     ShowEmployeeInfo(nextShift);
     assert(4 == nextShift->id);
 
     printf("\n");
 
-    nextShift = NULL;
-    found = FoundNextNightShift(&list, &nextShift, "AAA", 7);
+    
+    nextShift = FoundNextNightShift(&list, "AAA", 7);
     ShowEmployeeInfo(nextShift);
     assert(1 == nextShift->id);
 
     printf("\n");
-
-    nextShift = NULL;
-    found = FoundNextNightShift(&list, &nextShift, "BBB", 8);
+    
+    nextShift = FoundNextNightShift(&list, "BBB", 8);
     ShowEmployeeInfo(nextShift);
     assert(3 == nextShift->id);
 
@@ -104,8 +103,10 @@ int main(void) {
 }
 
 
-int FoundNextNightShift(List* plist, Data* nextShift, char* name, int days) {
+Data FoundNextNightShift(List* plist, char* name, int days) {
     int id = FindEmployeeIdByName(plist, name);
+
+    Data nextShift = NULL;
 
     if (id == -1) {
         return FALSE;
@@ -115,12 +116,14 @@ int FoundNextNightShift(List* plist, Data* nextShift, char* name, int days) {
     // list의 cur이 현재 검색된 데이터를 가지고 있다.
     // 이 시점에서 days만 큼 next를 호출해주면 된다.
     // 해깔리는 부분이... 리스트에 있는 내용을 복사해서 반환해야하나?
+    //      최초에는 반환될 데이터를 참조받을 변수를 포인터로 호출처로 부터 받아왔는데...
+    //      저자님 풀이를 보니 이 함수 내에서 직접 포인터를 반환하기도 하셔서, 따라해봤다.
 
     for (int i = 0; i < days; i++) {
-        LNext(plist, nextShift);
+        LNext(plist, &nextShift);
     }
 
-    return TRUE;
+    return nextShift;
 }
 
 
