@@ -14,6 +14,9 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
 #### VS 플러그인 설치
 * Markdown Editor
   * https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor
+* SonarLint for Visual Studio 2019 (추후 설치)
+  * Java 였다면 대부분 룰을 알고 있기 때문에, 제안이 도움이 되는데, C의 경우는 처음부터 룰의 메시지들이 많이나오다보면 해깔릴 수 있어 나중에 설치하자!
+  * https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019
 
 #### VS 단축키
 * 이름 바꾸기
