@@ -23,6 +23,12 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
   * Ctrl + R, Ctrl + R
 * 코드 포멧팅
   * Ctrl + K, Ctrl + D(전체) 또는 F(선택부분)
+* 한 줄 주석
+  * Ctrl + K, Ctrl + C
+* 여러줄 주석 (주석영역에서 다시 눌러 취소 가능)
+  * Ctrl + Shfit + /
+* 주석 취소
+  * Ctrl + K, Ctrl + U
 
 #### 소스파일 UTF-8 BOM
 * 새로운 *.c, *.cpp, *.h 를 추가할 때, 한글이 들어가면 EUC-KR로 저장이 되는 문제가 있었는데,  
@@ -45,7 +51,7 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
     ```
 
 * BOM이 붙은 UTF-8을 소스파일로 사용한 이유는, 프로젝트를 기본으로 생성하는 환경에서는 BOM이 안붙으면 이 소스가 UTF-8 소스인지 Visual Studio가 인식을 못하는 것 같다.
-* BOM이 붙은 소스를 빌드할 때, 아래 경고가 노출됨
+* BOM이 붙지않은 UTF-8 소스를 빌드할 때, 아래 경고가 노출됨
   * `warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.`
     * 컴파일러 추가 옵션에 `/utf-8`을 넣어주면 위의 경고는 나타나지 않는데... 일단 옵션은 넣지 말고, BOM 붙여서 쓰자. 
       * https://docs.microsoft.com/ko-kr/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-160
