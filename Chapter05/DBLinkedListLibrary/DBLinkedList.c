@@ -111,6 +111,7 @@ int LPrevious(List* plist, Data* pdata) {
 
 
 Data LRemove(List* plist) {
+    // TODO: 문제 05-2 먼저 풀고 구현하자.
     return NULL;
 }
 
