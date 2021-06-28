@@ -111,8 +111,37 @@ int LPrevious(List* plist, Data* pdata) {
 
 
 Data LRemove(List* plist) {
-    // TODO: 문제 05-2 먼저 풀고 구현하자.
-    return NULL;
+    // 1. 데이터가 없을 때.
+    if (plist->head == NULL) {
+        return -1;
+    }
+
+    Node* toRemoveNode = plist->cur;
+    Data toRemoveData = toRemoveNode->data;
+
+    // 2. 첫번째 노드를 지울 때..
+    if (plist->head == toRemoveNode) {
+        plist->head = toRemoveNode->next;
+
+        if (plist->head != NULL && plist->head->next != NULL) {
+            plist->head->next->prev = plist->head;
+        }
+        plist->cur = plist->head;
+    }
+    else {
+        // 3. 중간 또는 마지막 요소를 지울 경우...     
+        if (toRemoveNode->next != NULL) { // 마지막 요소를 지울 경우...
+            toRemoveNode->next->prev = toRemoveNode->prev;
+        }
+
+        toRemoveNode->prev->next = toRemoveNode->next;
+        plist->cur = toRemoveNode->prev;
+    }
+
+    free(toRemoveNode);
+
+    (plist->numOfData)--;
+    return toRemoveData;
 }
 
 
