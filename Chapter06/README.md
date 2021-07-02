@@ -8,6 +8,9 @@
 * 프로젝트
   * ArrayBaseStackLibrary
   * ArrayBaseStackMain
+  * ex06-1
+    * 5장의 CLinkedListLibrary 프로젝트를 사용함.
+      * 전처리기 옵션에서 `_USE_EMPLOYEE_DATATYPE` 가 제거되어 있어야함
 
 
 ### [06-3] 스택의 연결 리스트 기반 구현
