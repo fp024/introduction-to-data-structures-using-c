@@ -7,30 +7,31 @@
 
 
 void StackInit(Stack* pstack) {
-    ListInit(pstack);
+    pstack->plist = (List*)malloc(sizeof(List));
+    ListInit(pstack->plist);
 }
 
 
 int SIsEmpty(Stack* pstack) {
-    return LCount(pstack) > 0 ? FALSE : TRUE;
+    return LCount(pstack->plist) > 0 ? FALSE : TRUE;
 }
 
 
 void SPush(Stack* pstack, Data data) {
-    LInsertFront(pstack, data);
+    LInsertFront(pstack->plist, data);
 }
 
 
 Data SPop(Stack* pstack) {
     Data data;
-    LFirst(pstack, &data);
-    LRemove(pstack);
-    return data; // 이부분이 해깔린다. 
+    LFirst(pstack->plist, &data);
+    LRemove(pstack->plist);
+    return data; 
 }
 
 
 Data SPeek(Stack* pstack) {
     Data data;
-    LFirst(pstack, &data);
+    LFirst(pstack->plist, &data);
     return data;
 }

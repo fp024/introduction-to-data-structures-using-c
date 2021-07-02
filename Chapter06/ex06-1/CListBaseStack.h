@@ -4,7 +4,18 @@
 
 #include "CLinkedList.h"
 
-typedef CList Stack;
+#define TRUE        1
+#define FALSE       0
+
+typedef int Data; // CLinkedList.h 에 Data타입이 선언되어있는데, 재선언해도 상관없나?
+
+
+typedef struct _listStack {
+    List* plist;
+} ListStack;
+
+typedef ListStack Stack;
+
 
 /**
  * 스택의 초기화
@@ -14,6 +25,7 @@ typedef CList Stack;
  * @param pstack 스택 자료구조의 포인터
  */
 void StackInit(Stack* pstack);
+
 
 /**
  * 스택이 비었는지 확인
@@ -32,6 +44,7 @@ int SIsEmpty(Stack* pstack);
  * @param data 저장할 데이터
  */
 void SPush(Stack* pstack, Data data);
+
 
 /**
  * 스택의 pop 연산
