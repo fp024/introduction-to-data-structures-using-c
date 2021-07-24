@@ -1,7 +1,7 @@
 ﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
 ### Visual Studio 2019 를 사용하여 진행
 
-Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
+Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
 
 ### 프로젝트 생성
 1. 솔루션으로 introduction-to-data-structures-using-c 를 일단 만듬.
@@ -26,14 +26,14 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
 * 한 줄 주석
   * Ctrl + K, Ctrl + C
 * 여러줄 주석 (주석영역에서 다시 눌러 취소 가능)
-  * Ctrl + Shfit + /
+  * Ctrl + Shift + /
 * 주석 취소
   * Ctrl + K, Ctrl + U
 
 #### 소스파일 UTF-8 BOM
 * 새로운 *.c, *.cpp, *.h 를 추가할 때, 한글이 들어가면 EUC-KR로 저장이 되는 문제가 있었는데,  
   아래처럼 기본 템플릿 파일에 미리 한글을 넣고 UTF-8 BOM으로 저장하면 UTF-8 BOM 형식 파일을 유지할 수 있었다. 
-* VisualStudio 2019 Community 설치 경로
+* Visual Studio 2019 Community 설치 경로
   * .\Community\Common7\IDE\VC\VCProjectItems
     * newc++file.cpp
     ```c
@@ -47,8 +47,8 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
      * 새로운 C/C++ 헤더 파일
      */
     #pragma once
-
-    ```
+    
+     ```
 
 * BOM이 붙은 UTF-8을 소스파일로 사용한 이유는, 프로젝트를 기본으로 생성하는 환경에서는 BOM이 안붙으면 이 소스가 UTF-8 소스인지 Visual Studio가 인식을 못하는 것 같다.
 * BOM이 붙지않은 UTF-8 소스를 빌드할 때, 아래 경고가 노출됨
@@ -98,7 +98,7 @@ Visaul Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
   * 프로그램 좌상단 아이콘 클릭후 `Defaults` 에 있는 부분과 `Properties` 를  열어 모두 동일하게 글꼴을 바꿔준다.
 
 
-#### MinGW-GCC로 수행하던 Github 프로젝트
+#### MinGW-GCC로 수행하던 GitHub 프로젝트
 * Visual Studio Code + MinGW GCC로 진행하던 프로젝트
   * https://github.com/fp024/introduction-to-data-structures-using-c-by-yoon
 * 특정 챕터를 왔다갔다 진행하면서 해도될 것 같다.
