@@ -97,6 +97,9 @@ Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
 * Windows 8.1 에서 `Microsoft Visual Stduio 디버그 콘솔`의 글꼴을 바꾸고 싶을 때...
   * 프로그램 좌상단 아이콘 클릭후 `Defaults` 에 있는 부분과 `Properties` 를  열어 모두 동일하게 글꼴을 바꿔준다.
 
+* Markdown 확장기능의 탭크기 변경
+  * `[도구]`->`[옵션]`->`[텍스트편집기]`->`[Markdown]`->`[탭]`->`탭크기, 들여쓰기크기 값 변경`
+
 
 #### MinGW-GCC로 수행하던 GitHub 프로젝트
 * Visual Studio Code + MinGW GCC로 진행하던 프로젝트
