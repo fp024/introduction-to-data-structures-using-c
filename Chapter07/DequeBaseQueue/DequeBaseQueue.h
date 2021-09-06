@@ -5,11 +5,8 @@
 
 #include "Deque.h"
 
-typedef struct _deqQueue {
-    Deque* deque;
-} DeqQueue;
-
-typedef DeqQueue Queue;
+/** 덱자체를 큐로 사용한다. */
+typedef Deque Queue;
 
 /**
  * 큐를 초기화한다.

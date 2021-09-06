@@ -1,31 +1,28 @@
 ﻿/**
  * DequeBaseQueue.c
  */
-#include <stdio.h>
-#include <stdlib.h>
 #include "DequeBaseQueue.h"
 
 
 void QueueInit(Queue* pq) {
-    pq->deque = (Deque*)malloc(sizeof(Deque));
-    DequeInit(pq->deque);
+    DequeInit(pq);
 }
 
 int QIsEmpty(Queue* pq) {
-    return DQIsEmpty(pq->deque);
+    return DQIsEmpty(pq);
 }
 
 
 void Enqueue(Queue* pq, Data data) {
-    DQAddLast(pq->deque, data);
+    DQAddLast(pq, data);
 }
 
 
 Data Dequeue(Queue* pq) {
-    return DQRemoveFirst(pq->deque);
+    return DQRemoveFirst(pq);
 }
 
 
 Data QPeek(Queue* pq) {
-    return DQGetFirst(pq->deque);
+    return DQGetFirst(pq);
 }
