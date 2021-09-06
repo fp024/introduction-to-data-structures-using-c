@@ -12,7 +12,7 @@
   * @return 다음 위치
   */
 int NextPosIdx(int pos) {
-    if (pos == QUE_LEN) {
+    if (pos == QUE_LEN - 1) {
         return 0;
     }
     else {

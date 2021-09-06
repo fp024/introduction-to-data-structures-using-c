@@ -110,6 +110,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListBaseQueueMain", "Chapte
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HamburgerSim", "Chapter07\HamburgerSim\HamburgerSim.vcxproj", "{ACC9DFE2-8003-4F14-AA9F-469ACB2A1005}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48A65C12-5923-4896-AC24-23FAB0508AF9} = {48A65C12-5923-4896-AC24-23FAB0508AF9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
