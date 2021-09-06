@@ -126,6 +126,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DequeBaseQueue", "Chapter07
 		{840BAB5D-E586-4B12-8286-19D233F199BB} = {840BAB5D-E586-4B12-8286-19D233F199BB}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{2C01B021-1D62-4E3D-88CA-57BA156CEFE6}"
+	ProjectSection(SolutionItems) = preProject
+		Chapter08\README.md = Chapter08\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
