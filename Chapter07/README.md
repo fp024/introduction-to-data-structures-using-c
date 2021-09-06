@@ -74,6 +74,10 @@ Data QPeek(Queue* pq);
 
 ### [07-4] 큐의 활용
 
+##### 프로젝트
+* HamburgerSim
+
+
 
 ### [07-5] 덱(Deque)의 이해와 구현
 
