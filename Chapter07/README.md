@@ -106,10 +106,51 @@ Data QPeek(Queue* pq);
 
 ### [07-5] 덱(Deque)의 이해와 구현
 
+#### 덱의 이해와 ADT 정의
+* 큐는 뒤로 넣고 앞으로 빼는 자료구조
+* 덱은 앞으로도 뒤로도 넣을 수 있고, 앞으로도 뒤로도 뺼 수 있는 자료구조
+* Deque 
+  * double-ended queue
+
+##### 덱 자료구조의 ADT
+
+```c
+void DequeInit(Deque* pdeq);
+// - 덱의 초기화를 진행한다.
+// - 덱 생성 후 제일 먼저 호출되어야 하는 함수이다.
+
+int DQIsEmpty(Deque* pdeq);
+// - 덱이 빈 경우 TRUE(1), 그렇지 않은 경우 FALSE(0)을 반환한다.
+
+void DQAddFirst(Deque* pdeq, Data data);
+// - 덱의 머리에 데이터를 저장한다. data로 전달된 값을 저장한다.
+
+void DQAddLast(Deque* pdeq, Data data);
+// - 덱의 꼬리에 데이터를 저장한다. data로 전달된 값을 저장한다.
+
+Data DQRemoveFirst(Deque* pdeq);
+// 덱의 머리에 위치한 데이터를 반환 및 소멸한다.
+
+Data DQRemoveLast(Deque* pdeq);
+// 덱의 꼬리에 위치한 데이터를 반환 및 소멸한다.
+
+Data DQGetFirst(Deque* pdeq);
+// 덱의 머리에 위치한 데이터를 소멸하지 않고 반환한다.
+
+Data DQGetLast(Deque* pdeq);
+// 덱의 꼬리에 위치한 데이터를 소멸하지 않고 반환한다.
+
+```
+
+#### 덱의 구현
+##### 프로젝트
+* DequeLibrary
+* DequeMain
 
 
-
-
+#### 문제 07-1 \[덱을 기반으로 큐를 구현하기]
+##### 프로젝트 
+* DequeBaseQueue (라이브러리 프로젝트와 메인 프로젝트로 분리하지 않았다.)
 
 
 ### 정오표
