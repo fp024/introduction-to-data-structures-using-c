@@ -1,4 +1,4 @@
-﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
+﻿﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
 ### Visual Studio 2019 를 사용하여 진행
 
 Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
@@ -33,6 +33,7 @@ Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
 #### 소스파일 UTF-8 BOM
 * 새로운 *.c, *.cpp, *.h 를 추가할 때, 한글이 들어가면 EUC-KR로 저장이 되는 문제가 있었는데,  
   아래처럼 기본 템플릿 파일에 미리 한글을 넣고 UTF-8 BOM으로 저장하면 UTF-8 BOM 형식 파일을 유지할 수 있었다. 
+  
 * Visual Studio 2019 Community 설치 경로
   * .\Community\Common7\IDE\VC\VCProjectItems
     * newc++file.cpp
@@ -51,10 +52,34 @@ Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
      ```
 
 * BOM이 붙은 UTF-8을 소스파일로 사용한 이유는, 프로젝트를 기본으로 생성하는 환경에서는 BOM이 안붙으면 이 소스가 UTF-8 소스인지 Visual Studio가 인식을 못하는 것 같다.
+
 * BOM이 붙지않은 UTF-8 소스를 빌드할 때, 아래 경고가 노출됨
   * `warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.`
     * 컴파일러 추가 옵션에 `/utf-8`을 넣어주면 위의 경고는 나타나지 않는데... 일단 옵션은 넣지 말고, BOM 붙여서 쓰자. 
       * https://docs.microsoft.com/ko-kr/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-160
+  
+* Windows 10에서의 **[Beta: 세계 언어 지원을 위해 Unicode UTF-8 사용]** 옵션
+
+  ![세계 언어 지원을 위해 Unicode UTF-8 사용 옵션](./image/beta-use-unicode.png)
+
+  한글 Windows 10에서 전에는 못보던 옵션이 보이는데... 저것을 체크하면 <br>
+
+  * 명령프롬프트(CMD), PowerShell 모두 chcp로 확인시 기본 65001 코드 페이지가 되었다.
+
+  * 소스 코드을 UTF-8 또는 UTF-8 BOM 인코딩 형식으로 저장했다면 별도로 /utf-8 컴파일러 옵션을 주지 않아도 UTF-8로 인식해서 경고/에러 없이 빌드가  잘 된다.
+
+    * 65001 코드 페이지의 CMD나 PowerShell에서 한글 출력이나 scanf를 통한 입력도 잘 된다.
+    * 이전에는 단순하게 chcp 65001 명령어로 코드 페이지 바꾸는 것 만으로 한글 출력에는 문제가 없었지만 **scanf 같은 입력함수는 한글이 깨졌었음.**
+    * Windows 10 환경에서는 이 옵션 켜 두고 써도 괜찮을 것 같다.
+
+  * 명령 프롬프트 기본 환경이 UTF-8이여서, VSCode에 GCC옵션으로 설정한  아래 옵션은 필요없어진 것 같다.
+
+    ```
+    "-finput-charset=UTF-8",
+    "-fexec-charset=CP949",
+    ```
+
+    
 
 #### 정적 라이브러리 만들기
 * 라이브러리 프로젝트 
