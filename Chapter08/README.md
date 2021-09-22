@@ -21,7 +21,7 @@
 
 #### 트리 관련 용어의 소개
 
-![그림08-04: 기본적인 트리](./resources/default-tree-exam.png)
+![그림08-04: 기본적인 트리](doc-resources/default-tree-exam.png)
 
 * 노드: node
   * 트리의 구성요소
@@ -49,11 +49,11 @@
 
   * 이진 트리
 
-    ![binary-tree](./resources/binary-tree.png)
+    ![binary-tree](doc-resources/binary-tree.png)
 
   * 공집합 노드가 포함된 것으로 생각하면 아래 모양의 트리도 이진 트리가 맞다.
 
-    ![empty-set-binary-tree](./resources/empty-set-binary-tree.png)
+    ![empty-set-binary-tree](doc-resources/empty-set-binary-tree.png)
 
   
 
@@ -61,20 +61,20 @@
 
 * 레벨과 높이
 
-  ![level_and_height](./resources/level_and_height.png)
+  ![level_and_height](doc-resources/level_and_height.png)
 
   * 레벨: 0부터 각 층별로 숫자를 매김
   * 높이: 트리의 최고레벨
 
 * 포화 이진트리 (full binary tree)
 
-  ![binary-tree](./resources/binary-tree.png)
+  ![binary-tree](doc-resources/binary-tree.png)
 
   * 모든 레벨이 꽉찬 이진트리
 
 * 완전 이진 트리 (complete binary tree)
 
-  ![complete-binary-tree](./resources/complete-binary-tree.png)
+  ![complete-binary-tree](doc-resources/complete-binary-tree.png)
 
   * 모든 레벨이 꽉차진 않았지만 왼쪽부터 빈틈없이 차곡차곡 채워진 이진트리
     * 노드의 순서가 위에서 아래로, 왼쪽에서 오른쪽의 순서대로 채워짐.
@@ -104,7 +104,7 @@
   * 이런식의 오류가 날때.. 뭔가 배열의 인덱스 범위를 초과하게 코드를 잘못 작성했는지 확인해보자. 
 * 확인이 필요한 다이어그램에 대해서 LibreOffice Draw로 그리는데, odg파일도 Git저장소에 포함시킨다.
   * 8장 다이어그램 모음 odg 파일 
-    * [./resources/chapter-08-diagram.odg](./resources/chapter-08-diagram.odg) 
+    * [chapter-08-diagram.odg](doc-resources/chapter-08-diagram.odg) 
 
 * 다이어그램 이미지의 모든 글꼴은 네이버 `D2Coding`으로 사용한다.
 
