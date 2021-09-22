@@ -85,6 +85,40 @@
 
 ### [08-2] 이진 트리의 구현
 
+#### 이진 트리의 구현 방법: 배열기반 or 연결리스트 기반
+
+* 연결리스트
+
+  * 트리를 표현하기에 유연함
+
+* 배열기반
+
+  ![array_based_bin_tree](doc-resources/array_based_bin_tree.png)
+
+  * 트리가 완성된 이후 부터는 그 트리를 대상으로 매우 빈번한 탐색이 이루어질 때는 배열기반으로 고려해볼만함
+  * 그러고보니.. 콘도우 저자님 책에서 힙 정렬을 할 때, 탐색 트리를 만들어서 정렬했었다.
+    * Chapter 16.  힙 소트
+      * https://github.com/fp024/java-programmer-no-tameno-algorithm-to-data-kouzou/tree/master/src/main/java/org/fp024/study/algorithm/part04/chapter16
+  * 노드 번호가 부여된 이진 트리
+  * 배열의 인덱스가 0인 부분은 사용하지 않음
+    * 구현의 편의
+    * 오류 발생 최소화
+
+* 연결리스트 기반
+
+  ![link_based_bin_tree](doc-resources\link_based_bin_tree.png)
+
+
+
+#### 헤더 파일에 정의된 구조체 이해 ~ 이진트리의 구현
+
+* 프로젝트
+  * BinaryTreeLibrary
+    * 재귀적인 free()시에 순회를 어떻게 할지 고려해야하는데, 이부분은 바로 다음 파트에서 논의
+  * BinaryTreeMain
+
+
+
 ### [08-3] 이진 트리의 순회(Traversal)
 
 #### 문제 08-1 \[이진 트리의 소멸\]
@@ -105,6 +139,7 @@
 * 확인이 필요한 다이어그램에 대해서 LibreOffice Draw로 그리는데, odg파일도 Git저장소에 포함시킨다.
   * 8장 다이어그램 모음 odg 파일 
     * [chapter-08-diagram.odg](doc-resources/chapter-08-diagram.odg) 
-
 * 다이어그램 이미지의 모든 글꼴은 네이버 `D2Coding`으로 사용한다.
+* Visual Studio에서 이미지 들을 커밋하면 경로를 바꿔주는 것 같다. 커밋 할 때 옵션을 봐야겠다. Source Tree로 커밋할 때는 경로가 바뀌는 일은 없었음..
+  * `https://github.com/{username}/{repository_name}/blob/master/이미지파일`
 
