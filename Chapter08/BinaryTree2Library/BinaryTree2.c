@@ -84,3 +84,32 @@ void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action) {
     PostorderTraverse(GetRightSubTree(bt), action);
     action(GetData(bt));
 }
+
+
+
+void DeleteTree(BTreeNode** btAddress) {
+    /*
+        외부 사용처에서 BTreeNode* 로 넘겼을 때, 
+        그 사용처의 BTreeNode* 변수 자체를 NULL로 바꾸기 위해선 
+        그 변수의 주소를 받아와서 초기화해줄 수 밖에 없다.
+
+        전달 변수가 포인터변수라 또 주소를 얻게되어 2차원 포인터가 되어버렸다.
+     */
+
+    if (btAddress == NULL) {
+        return;
+    }
+
+    BTreeNode* bt = *btAddress;
+
+    if (bt == NULL) {
+        return;
+    }
+
+    DeleteTree(&(bt->left));
+    DeleteTree(&(bt->right));
+
+    free(bt);
+    *btAddress = NULL; // free 이후 NULL로 초기화
+
+}

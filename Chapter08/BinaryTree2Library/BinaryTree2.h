@@ -102,4 +102,17 @@ void InorderTraverse(BTreeNode* bt, VisitFuncPtr action);;
 void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action);
 
 
+
+/**
+ * 문제 08-1 [이진 트리의 소멸]
+ * 특정 노드 부터 시작하는 이진 트리의 소멸
+ * 
+ * @param bt  삭제할 트리 노드의 주소
+ *   
+ *   시험삼아 하는데, 호출처의 bt를 DeleteTree()함수 내에서 free한후 NULL로 바꾸기 위해 2차원 포인터로 바꿔본다.
+ */
+void DeleteTree(BTreeNode** bt);
+
+
+
 #endif // !__BINARY_TREE_H__

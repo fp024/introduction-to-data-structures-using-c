@@ -2,6 +2,7 @@
  * BinaryTreeMain2.c
  */
 #include <stdio.h>
+#include <assert.h>
 #include <stdlib.h>
 #include "BinaryTree2.h"
 
@@ -52,6 +53,17 @@ int main(void) {
     // 4 -> 5 -> 2 -> 6 -> 3 -> 1   (이부분 해깔렸다. 최종 루트를하기전에 right를 끝부터 탐색하게 되네... )
     PostorderTraverse(bt1, ShowIntData);
     printf("\n");
+
+
+    // 문제 08-1 - 이진트리 노드의 재귀적 소멸
+    DeleteTree(&bt1);
+
+    printf("=== 후위 순위로 노드 삭제 이후 출력 ===");
+    PostorderTraverse(bt1, ShowIntData);
+    printf("\n");
+
+    // Delete 함수에서 free() 처리 및 NULL초기화까지 진행한다.
+    assert(bt1 == NULL);
 
     return 0;
 }
