@@ -84,6 +84,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListBaseStackMain", "Chapte
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex06-1", "Chapter06\ex06-1\ex06-1.vcxproj", "{3B827F14-E541-4582-AD5A-A767E7BEFC17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{461BC935-26C5-4B28-93DE-031940E650F2} = {461BC935-26C5-4B28-93DE-031940E650F2}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfixToPostfixCalc", "Chapter06\InfixToPostfixCalc\InfixToPostfixCalc.vcxproj", "{AD92B494-A62C-45FD-A980-772756F302BC}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -130,6 +133,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{
 	ProjectSection(SolutionItems) = preProject
 		Chapter08\README.md = Chapter08\README.md
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeMain", "Chapter08\BinaryTreeMain\BinaryTreeMain.vcxproj", "{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -363,6 +368,14 @@ Global
 		{28BB07A0-AB58-4E0C-8A1E-C2E4D88F0F58}.Release|x64.Build.0 = Release|x64
 		{28BB07A0-AB58-4E0C-8A1E-C2E4D88F0F58}.Release|x86.ActiveCfg = Release|Win32
 		{28BB07A0-AB58-4E0C-8A1E-C2E4D88F0F58}.Release|x86.Build.0 = Release|Win32
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Debug|x64.ActiveCfg = Debug|x64
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Debug|x64.Build.0 = Debug|x64
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Debug|x86.ActiveCfg = Debug|Win32
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Debug|x86.Build.0 = Debug|Win32
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Release|x64.ActiveCfg = Release|x64
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Release|x64.Build.0 = Release|x64
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Release|x86.ActiveCfg = Release|Win32
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,6 +409,7 @@ Global
 		{840BAB5D-E586-4B12-8286-19D233F199BB} = {56EA3006-0328-4B9A-8953-74768D5704F5}
 		{19ECAC39-360B-4A4A-A4E1-920ABCAE3896} = {56EA3006-0328-4B9A-8953-74768D5704F5}
 		{28BB07A0-AB58-4E0C-8A1E-C2E4D88F0F58} = {56EA3006-0328-4B9A-8953-74768D5704F5}
+		{2710E91B-AE28-437D-9BF9-ADBF0EB4756B} = {2C01B021-1D62-4E3D-88CA-57BA156CEFE6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EBA6E55-C3F5-4C42-8D7D-2689469B7853}
