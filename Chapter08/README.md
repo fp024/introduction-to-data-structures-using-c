@@ -93,7 +93,7 @@
 
 * 배열기반
 
-  ![array_based_bin_tree](doc-resources/array_based_bin_tree.png)
+  ![array_based_bin_tree](./doc-resources/array_based_bin_tree.png)
 
   * 트리가 완성된 이후 부터는 그 트리를 대상으로 매우 빈번한 탐색이 이루어질 때는 배열기반으로 고려해볼만함
   * 그러고보니.. 콘도우 저자님 책에서 힙 정렬을 할 때, 탐색 트리를 만들어서 정렬했었다.
@@ -106,7 +106,7 @@
 
 * 연결리스트 기반
 
-  ![link_based_bin_tree](doc-resources\link_based_bin_tree.png)
+  ![link_based_bin_tree](./doc-resources/link_based_bin_tree.png)
 
 
 
