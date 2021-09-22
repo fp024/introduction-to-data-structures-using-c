@@ -141,5 +141,6 @@
     * [chapter-08-diagram.odg](doc-resources/chapter-08-diagram.odg) 
 * 다이어그램 이미지의 모든 글꼴은 네이버 `D2Coding`으로 사용한다.
 * Visual Studio에서 이미지 들을 커밋하면 경로를 바꿔주는 것 같다. 커밋 할 때 옵션을 봐야겠다. Source Tree로 커밋할 때는 경로가 바뀌는 일은 없었음..
-  * `https://github.com/{username}/{repository_name}/blob/master/이미지파일`
+  * `https://github.com/{username}/{repository_name}/blob/master/ChapterXXX/이미지파일`
+  * 이미지를 blob/{branch} 명에 몰아서 두는게 맞는거 같기도 한데.. 일단은 push는 SourceTree로 하자
 
