@@ -117,11 +117,62 @@
     * 재귀적인 free()시에 순회를 어떻게 할지 고려해야하는데, 이부분은 바로 다음 파트에서 논의
   * BinaryTreeMain
 
-
-
 ### [08-3] 이진 트리의 순회(Traversal)
 
+#### 순회의 3가지 방법
+
+* 전위 순회 (Preorder Traversal) : 루트 노드를 먼저!  (번호는 노드 방문순서)
+
+  ```
+           1
+         /  \
+       2     3
+  ```
+
+* 중위 순회 (Inorder Traversal) : 루트 노드를 중간에!
+
+  ```
+           2
+         /  \
+       1     3
+  ```
+
+* 후위 순회 (Postorder Traversal) : 루트노드를 마지막에!
+
+  ```
+           3
+         /  \
+       1     2
+  ```
+
+  
+
+#### 순회의 재귀적 표현	
+
+* 중위 순회
+  1. 왼쪽 서브트리의 순회
+  2. 루트 노드의 방문
+  3. 오른쪽 서브트리의 순회
+
+* 소스참조: BinaryTreeMain.c
+
+
+
+#### 노드의 방문 이유! 자유롭게 구성하기
+
+* InorderTraverse에 함수 포인터를 인자로 받게하여 어떤식으로 방문할지의 방법을 전달한다.
+* 프로젝트
+  * BinaryTree2Library
+  * BinaryTree2Main
+
 #### 문제 08-1 \[이진 트리의 소멸\]
+
+* 프로젝트
+  * BinaryTree2Library, BinaryTree2Main 에 덧붙여서 진행
+
+
+
+
 
 ### [08-4] 수식 트리(Expression Tree)의 구현
 
@@ -143,4 +194,7 @@
 * Visual Studio에서 이미지 들을 커밋하면 경로를 바꿔주는 것 같다. 커밋 할 때 옵션을 봐야겠다. Source Tree로 커밋할 때는 경로가 바뀌는 일은 없었음..
   * `https://github.com/{username}/{repository_name}/blob/master/ChapterXXX/이미지파일`
   * 이미지를 blob/{branch} 명에 몰아서 두는게 맞는거 같기도 한데.. 일단은 push는 SourceTree로 하자
+
+* typedef로 함수 포인터 별칭 정의하기
+  * https://dojang.io/mod/page/view.php?id=601
 
