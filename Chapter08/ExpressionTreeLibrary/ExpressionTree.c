@@ -66,8 +66,34 @@ void ShowPrefixTypeExp(BTreeNode* bt) {
 }
 
 
+/**
+ * 문제 08  
+ * 중위 표기법에 소괄호 넣기  관련 함수 수정
+ */
+void InorderTraverseForEx08(BTreeNode* bt, VisitFuncPtr action) {
+    if (bt == NULL) {
+        return;
+    }
+
+    // 연산자 노드일때만 괄호 열고 닫게 하는 식으로 했다.
+    if (bt->data < 0 || bt->data > 9) {
+        printf("( ");
+    }
+
+    InorderTraverseForEx08(GetLeftSubTree(bt), action);
+
+    action(GetData(bt));
+    
+    InorderTraverseForEx08(GetRightSubTree(bt), action);
+    
+    if (bt->data < 0 || bt->data > 9) {
+        printf(" )");
+    }
+}
+
+
 void ShowInfixTypeExp(BTreeNode* bt) {
-    InorderTraverse(bt, ShowNodeData);
+    InorderTraverseForEx08(bt, ShowNodeData);
 }
 
 
