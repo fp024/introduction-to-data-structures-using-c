@@ -115,4 +115,4 @@ void DeleteTree(BTreeNode** bt);
 
 
 
-#endif // !__BINARY_TREE_H__
+#endif // !__BINARY_TREE2_H__

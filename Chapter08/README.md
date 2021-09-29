@@ -176,8 +176,76 @@
 
 ### [08-4] 수식 트리(Expression Tree)의 구현
 
+#### 수식 트리의 이해
+
+* 수식
+
+  * `7 + 4 * 2 - 1`
+
+* 수식 트리
+
+  ![expression_tree_p321-01](doc-resources/expression_tree_p321-01.png)
+
+  
+
+* 수식 트리 연산방법
+  * 루트 노드에 저장된 연산자의 연산을 하되, 두 개의 자식 노드에 저장된 두 피 연산자를 대상으로 연산을 한다.
+
+
+
+ * 수식트리 활용
+    * 중위 표기법 수식 -> 후위 표기법 수식 -> 수식트리
+      	* 중위 표기법을 바로 수식트리로 전환하기는 복잡하고 힘듬, 후위 표기법으로 변환한뒤, 수식트리로 만듦.
+
+
+
+#### 수식 트리의 구현에 필요한 도구와 헤더파일의 정의
+
+* 프로젝트
+  * 6장의 
+  * BinaryTree2Library
+  * ExpressionTreeLibrary
+    * <?> 프로젝트를 정적 라이브러리로 지정하면 따로 링크가 뜨진 않네..?
+      * 라이브러리 관리자라는 항목이 새로 있다. 여기서 `추가 종속성`하고 `추가 라이브러리 디렉터리`를 지정하면 될 것 같다.
+  * ExpressionTreeMain
+
+
+
+#### 후위 표기법의 수식을 기반으로 수식트리 구성하기
+
+* `1 2 + 7 *` 의 수식 트리
+
+  ![postfix_expression_tree](doc-resources/postfix_expression_tree.png)
+
+  * 특징
+    * 연산 순서대로 왼쪽에서 오른쪽으로 연산자가 나열됨
+    * 해당 연산자의 두 피연산자는 연산자 앞에 나열됨
+    * 먼저 등장하는 피연산자와 연산자를 이용해 트리 하단을 만들고, 이를 바탕으로 점진적으로 트리 윗부분을 구성해 나아가야함.
+  * ExpressionTreeLibrary의 Expression.c 파일의 MakeExpTree()
+
+#### 수식 트리의 순회
+
+* BinaryTree2Library프로젝트에서 정의한 함수를 활용한다.
+
+  * PreorderTraverse(), InorderTraverse(), PostorderTraverse()
+
+* TODO:
+
+  * 스택에 넣을 요소(Data 타입)가 `BTreeNode*` 가 되어서 6장에서 구현했던 프로젝트를 그대로 사용할 수 없다.
+
+    * 6장에서 구현시 Data의 타입이 int여서 뭔가 제네릭처럼 처리를 할 수 있어야하는데, 그부분이 안되어있어, 스택 소스는 해당 프로젝트에 포함시키고 typedef 만 재정의 했다. <br>
+
+      `typedef BTreeNode* Data;`  
+
+
 
 #### 문제 08-2 \[중위 표기법의 소괄호\]
+
+
+
+#### 수식 트리의 계산
+
+
 
 
 ### **정오표**
