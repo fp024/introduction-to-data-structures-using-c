@@ -241,6 +241,38 @@
 
 #### 문제 08-2 \[중위 표기법의 소괄호\]
 
+* 현재 방문 노드가 연산자 노드일 때 괄호로 감싸주면 됨
+* 현재 방문노드가 연산자 노드인지의 판별은 좌우 어느 한쪽은 반드시 있어야한다는 것이 고려되면 될 것 같다.
+  * 이항연산자만 써서 연산자 노드라면 왼쪽/오른쪽 자식 모두 있어야할 것으로 판단할 수 있지만... 지금은 고려하지 않더라도 단항연산자도 있으므로... 왼쪽 오른쪽 둘중 하나라도 NULL이 아닐 때, 연산자로 간주했다.
+
+    ```c
+    /**
+     * 문제 08
+     * 중위 표기법에 소괄호 넣기  관련 함수 수정
+     */
+    void InorderTraverseForEx08(BTreeNode* bt, VisitFuncPtr action) {
+        if (bt == NULL) {
+            return;
+        }
+    
+        // 현재 방문노드가 연산자 노드일때만 괄호 열고 닫게 하는 식으로 했다.
+        if (GetLeftSubTree(bt) != NULL || GetRightSubTree(bt) != NULL) {
+            printf("( ");
+        }
+    
+        InorderTraverseForEx08(GetLeftSubTree(bt), action);
+        action(GetData(bt));
+        InorderTraverseForEx08(GetRightSubTree(bt), action);
+    
+        if (GetLeftSubTree(bt) != NULL || GetRightSubTree(bt) != NULL) {
+            printf(" )");
+        }
+    }
+    
+    ```
+
+
+
 
 
 #### 수식 트리의 계산
