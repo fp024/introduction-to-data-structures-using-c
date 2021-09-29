@@ -30,6 +30,7 @@ int main(void) {
     printf("문제8번 결과 확인 - 괄호 포함된 중위 표기법의 수식: ");
     ShowInfixTypeExp(eTreeEx08);   //  ( 3 + ( 2 * 7  ) )
     printf("\n");
-
+    printf("연산의 결과: %d\n", EvaluateExpTree(eTreeEx08));
+    
     return 0;
 }

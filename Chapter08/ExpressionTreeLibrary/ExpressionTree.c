@@ -44,11 +44,30 @@ BTreeNode* MakeExpTree(char exp[]) {
 
 
 
-int EvaluateExpTree(BTreeNode* bt) {
-    // TODO:
-    return -1;
-}
+int EvaluateExpTree(BTreeNode* bt) { // bt는 루트가 연산자인 노드다
+    int op1, op2;
 
+    // 단말노드라면 ...
+    if (GetLeftSubTree(bt) == NULL && GetRightSubTree(bt) == NULL) {
+        return GetData(bt);
+    }
+
+    op1 = EvaluateExpTree(GetLeftSubTree(bt));
+    op2 = EvaluateExpTree(GetRightSubTree(bt));
+
+    switch (GetData(bt)) {
+    case '+':
+        return op1 + op2;
+    case '-':
+        return op1 + op2;
+    case '*':
+        return op1 * op2;
+    case '/':
+        return op1 / op2;
+    }
+
+    return 0;
+}
 
 
 void ShowNodeData(int data) {

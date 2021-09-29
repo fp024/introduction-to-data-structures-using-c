@@ -18,6 +18,8 @@ BTreeNode* MakeExpTree(char exp[]);
 /**
  * 수식 트리 계산
  * 
+ * bt의 노드의 루트 데이터 값은 연산자여야한다.
+ * 
  * @param bt 계산할 수식 트리
  * @return 수식 트리를 계산한 값
  */
