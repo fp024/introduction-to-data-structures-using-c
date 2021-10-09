@@ -158,6 +158,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpressionTreeMain", "Chapt
 		{595EFAFB-32D0-4C03-9A7A-0109AA96F938} = {595EFAFB-32D0-4C03-9A7A-0109AA96F938}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{FC1F7282-15BE-421A-859D-86B52C450876}"
+	ProjectSection(SolutionItems) = preProject
+		Chapter09\README.md = Chapter09\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
