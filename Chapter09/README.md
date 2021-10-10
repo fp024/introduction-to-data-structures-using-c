@@ -147,7 +147,7 @@
 
 * 배열 기반 이진 트리
 
-  ![배열 기반 이진 트리](../Chapter08\doc-resources\array_based_bin_tree.png)
+  ![배열 기반 이진 트리](../Chapter08/doc-resources\array_based_bin_tree.png)
 
   
 
@@ -206,19 +206,86 @@
 
 #### 제법 쓸만한 수준의 힙 구현: 힙의 변경
 
+* 프로젝트 
+  * EnhancedHeapLibrary
+
+* 우선순위 비교 기준 함수를 함수 포인터로 라이브러리 사용자가 전달해서 사용
+
+  * 첫번째 인자의 우선순위가 높으면, 0보다 큰값이 반환
+  * 두번째 인자의 우선순위가 높으면, 0보다 작은 값이 반환
+  * 첫번째, 두번째 우선순위가 같다면 0 을 반환
+
+  ```c
+  typedef int PriorityComp(HData d1, HData d2);
+  ```
+
+  
+
+* Heap 구조체 변경 - 우선순위 판단의 기준을 힙에 설정할 수 있도록 함.
+
+  ```c
+  typedef struct _heap {
+  	PriorityComp* comp;         // typedef int (*PriorityComp)(HData d1, HData d2);
+      int numOfData;
+      HData heapArr[HEAP_LEN];	// typedef char HData;
+  }
+  ```
+
+
 
 
 #### 제법 쓸만한 수준의 힙 구현: 힙의 변경사항 완성하기
 
+* 프로젝트 
 
+  * EnhancedHeapLibrary
+
+  * EnhancedHeapMain
+
+    
 
 #### 제법 쓸만한 수준의 힙을 이용한 우선순위 큐의 구현
 
 
 
+
+
+
+
 ### **정오표**
 
-* 
+* p363  typedef 와 _heap 구조체의 함수 포인터 선언부의 포인터 지정이 잘못됨
+
+  * 동영상 강의에서는 `typedef int PriorityComp(HData d1, HData d2);` 와 같이 사용하여 문제가 없는데, 교제가 수정이 안되어 있는 것 같다.
+
+      ```c
+      // typedef에서 함수포인터 타입으로 지정했는데.. 구조체에서 포인터를 또 붙임
+      // Visual Studio 2019에서는 아래 오류로 노출됨..
+      //   "C++ 명백한 호출의 괄호 앞에 오는 식에는 함수 (포인터) 형식이 있어야 합니다"
+      typedef int (*PriorityComp)(HData d1, HData d2);
+      
+      typedef struct _heap {
+        PriorityComp* comp;
+        // ...
+      }
+      
+      // ==>
+      typedef struct _heap {
+        PriorityComp comp;  // 포인터를 빼야함.         
+        // ...
+      }
+      
+      // ===================================================================================
+      // typedef에서 함수 포인터 타입으로 지정하지 않는다면, 아래 내용은 정상임.
+      typedef int PriorityComp(HData d1, HData d2);
+      
+      typedef struct _heap {
+        PriorityComp* comp;
+        // ...
+      }
+      ```
+
+    
 
 ### 기타
 

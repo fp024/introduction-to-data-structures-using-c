@@ -1,4 +1,4 @@
-﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
+﻿﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
 ### Visual Studio 2019 를 사용하여 진행
 
 Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
@@ -11,14 +11,14 @@ Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
 4. gitignore는 레포지토리 생성시 자동으로 잘 만들어짐
 
 
-#### VS 플러그인 설치
+#### Visual Studio 플러그인 설치
 * Markdown Editor
   * https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor
 * SonarLint for Visual Studio 2019 (추후 설치)
   * Java 였다면 대부분 룰을 알고 있기 때문에, 제안이 도움이 되는데, C의 경우는 처음부터 룰의 메시지들이 많이나오다보면 해깔릴 수 있어 나중에 설치하자!
   * https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019
 
-#### VS 단축키
+#### Visual Studio 단축키
 * 이름 바꾸기
   * Ctrl + R, Ctrl + R
 * 코드 포멧팅
@@ -29,6 +29,8 @@ Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝�
   * Ctrl + Shift + /
 * 주석 취소
   * Ctrl + K, Ctrl + U
+* 파일 찾기
+  * Ctrl + ,  입력 후 나타나는 입력상자에 파일명 입력
 
 #### 소스파일 UTF-8 BOM
 * 새로운 *.c, *.cpp, *.h 를 추가할 때, 한글이 들어가면 EUC-KR로 저장이 되는 문제가 있었는데,  
