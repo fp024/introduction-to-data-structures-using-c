@@ -147,7 +147,7 @@
 
 * 배열 기반 이진 트리
 
-  ![배열 기반 이진 트리](../Chapter08/doc-resources\array_based_bin_tree.png)
+  ![배열 기반 이진 트리](../Chapter08/doc-resources/array_based_bin_tree.png)
 
   
 
@@ -250,9 +250,17 @@
   * PriorityQueue
     * 라이브러리 프로젝트로 별도 분리하진 않았다.
 
+#### 문제 09-1  [우선순위 큐의 활용]
 
+* 프로젝트
 
+  * ex09-1
 
+    * 요소를 char에서 char*으로 바꿔야하여 기존 프로젝트의 소스를 활용할 수 없었다.
+
+    * 현재 프로젝트로 소스를 가져와서 수정했다.
+
+      
 
 ### **정오표**
 
