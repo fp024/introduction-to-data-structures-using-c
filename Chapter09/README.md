@@ -246,7 +246,9 @@
 
 #### 제법 쓸만한 수준의 힙을 이용한 우선순위 큐의 구현
 
-
+* 프로젝트
+  * PriorityQueue
+    * 라이브러리 프로젝트로 별도 분리하진 않았다.
 
 
 
@@ -280,7 +282,7 @@
       typedef int PriorityComp(HData d1, HData d2);
       
       typedef struct _heap {
-        PriorityComp* comp;
+        PriorityComp* comp; // 포인터를 붙여둠.
         // ...
       }
       ```
