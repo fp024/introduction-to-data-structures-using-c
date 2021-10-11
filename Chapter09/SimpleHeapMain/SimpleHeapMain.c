@@ -5,6 +5,19 @@
 #include <stdio.h>
 #include "SimpleHeap.h"
 
+
+ /**
+  * 힙 형태로 저장한 배열 출력
+  */
+int printArray(HeapElem array[], int lastIndex) {
+    printf("---------------\n");
+    for (int i = 1; i <= lastIndex; i++) {
+        printf("array[%d]=%c \n", i, array[i].data);
+    }
+    printf("---------------\n");
+}
+
+
 int main(void) {
     Heap heap;
     HeapInit(&heap); // 힙의 초기화
@@ -51,26 +64,27 @@ int main(void) {
        C   C
      */
     printf("%c \n", HDelete(&heap));
+    printArray(heap.heapArr, heap.numOfData);
     // === A === 
+    // 어떤 노드가 왼쪽, 오른쪽 노드 둘다가지고 있고, 그 두자식의 우선순위가 같다면, 오른쪽을 반환하게 우선순위 설정함수가 구현되어있다.
     /*
          B
         / \
-       C   B
+       B   C
       /
      C
     */
 
     while (!HIsEmpty(&heap)) {
         printf("%c \n", HDelete(&heap));
+        printArray(heap.heapArr, heap.numOfData);
     }
   
      // === B === 
      /*
             B
-           /
-          C
-         /
-        C
+           / \
+          C   C         
      */
 
      // === B === 
