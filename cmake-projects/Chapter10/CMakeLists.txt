@@ -13,6 +13,13 @@ elseif (${CYGWIN})
     # Cygwin 환경에서는 따로 인코딩 옵션을 붙여줄 필요가 없었다.
 endif ()
 
+set(COMMON_LIB_PROJECT CommonUtils)
+set(COMMON_LIB_NAME ${COMMON_LIB_PROJECT})
+
 add_subdirectory(CommonUtils)
 add_subdirectory(BubbleSort)
 add_subdirectory(SelectionSort)
+
+
+
+

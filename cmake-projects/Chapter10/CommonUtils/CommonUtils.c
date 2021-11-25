@@ -5,17 +5,17 @@
 #include "CommonUtils.h"
 
 void printArray(int array[], int length) {
-    for (int i = 0; i < length; i++) {
-        printf("array[%d]= %d\n", i, array[i]);
-    }
+  for (int i = 0; i < length; i++) {
+    printf("array[%d]= %d\n", i, array[i]);
+  }
 }
 
 void printArraySimple(int array[], int length) {
-    for (int i = 0; i < length; i++) {
-        printf("%d", array[i]);
-        if(i < length - 1) {
-            printf(", ");
-        }
+  for (int i = 0; i < length; i++) {
+    if (i == length - 1) {
+      printf("%d\n", array[i]);
+      break;
     }
-    printf("\n");
+    printf("%d, ", array[i]);
+  }
 }
