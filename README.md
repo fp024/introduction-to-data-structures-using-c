@@ -1,7 +1,8 @@
-﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019
-### Visual Studio 2019 를 사용하여 진행
+﻿﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019, CLion
+### Visual Studio 2019 와 CLion을 사용하여 진행
 
-Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서, 프로젝트 생성해봄.
+* Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서...
+* CLion에서 CMake를 사용해서 프로젝트를 만들어줘서, 어떻게 사용하는지 궁금해서
 
 ### 프로젝트 생성
 1. 솔루션으로 introduction-to-data-structures-using-c 를 일단 만듬.
