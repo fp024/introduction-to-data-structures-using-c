@@ -19,3 +19,9 @@ void printArraySimple(int array[], int length) {
     printf("%d, ", array[i]);
   }
 }
+
+void swap(int array[], int aIndex, int bIndex) {
+  int temp = array[aIndex];
+  array[aIndex] = array[bIndex];
+  array[bIndex] = temp;
+}
