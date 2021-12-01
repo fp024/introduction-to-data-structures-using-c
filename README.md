@@ -1,4 +1,4 @@
-﻿﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019, CLion
+﻿## 윤성우의 열혈 자료구조 스터디 - VS 2019, CLion
 ### Visual Studio 2019 와 CLion을 사용하여 진행
 
 * Visual Studio 2019에서 Git을 어떻게 사용하나 궁금해서...

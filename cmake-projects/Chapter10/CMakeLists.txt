@@ -13,8 +13,15 @@ elseif (${CYGWIN})
     # Cygwin 환경에서는 따로 인코딩 옵션을 붙여줄 필요가 없었다.
 endif ()
 
+# 공통 함수 모음 라이브러리
 set(COMMON_LIB_PROJECT CommonUtils)
 set(COMMON_LIB_NAME ${COMMON_LIB_PROJECT})
+
+# 9장에서 진행했던 Enhanced Heap
+# 9장은 Visual Studio 2019 프로젝트로 진행해서, 여기에 불러다 사용하기가 애매해서, 현재 CMake 프로젝트에 소스코드를 새로 작성하자!
+set(ENHANCED_HEAP_LIB_PROJECT EnhancedHeap)
+set(ENHANCED_HEAP_LIB_NAME ${ENHANCED_HEAP_LIB_PROJECT})
+
 
 add_subdirectory(CommonUtils)
 add_subdirectory(BubbleSort)
