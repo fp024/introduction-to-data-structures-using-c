@@ -45,23 +45,71 @@
 
 ### 힙 정렬(Heap Sort): 이해와 구현
 
+* 힙의 특성
+  * 힙의 루트 노드에 저장된 값이 가장 우선순위가 크다.
+  * 힙의 루트 노드에 저장됨 값이 정렬 순서상 가장 앞선다.
+
 ### 힙 정렬(Heap Sort): 성능 평가
+
+* 삽입 삭제에 대한 시간 복잡도 => O(2log<sub>2</sub>n) => O(log<sub>2</sub>n)
+  * 힙 데이터 저장 시간 복잡도
+    * O(log<sub>2</sub>n)
+  * 힙 데이터 삭제 시간 복잡도
+    * O(log<sub>2</sub>n)
+* n개를 정렬하는 과정과 함깨 생각할 때.
+  * O(nlog<sub>2</sub>n)
+
+
 
 ### 병합 정렬(Merge Sort): 이해와 구현
 
+
+
+
+
 ### 병합 정렬(Merge Sort): 성능 평가
+
+
+
+
 
 ### 퀵 정렬(Quick Sort): 이해와 구현
 
+
+
+
+
 ### 퀵 정렬(Quick Sort): 성능 평가
+
+
+
+
 
 ### 기수 정렬(Radix Sort): 이해1
 
+
+
+
+
 ### 기수 정렬(Radix Sort): 이해2
+
+
+
+
 
 ### 기수 정렬(Radix Sort): LSD vs MSD
 
+
+
+
+
 ### 기수 정렬(Radix Sort): LSD 기준 구현
 
+
+
+
+
 ### 기수 정렬(Radix Sort): 성능평가
+
+
 

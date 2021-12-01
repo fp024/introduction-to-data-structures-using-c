@@ -5,8 +5,8 @@
 // 일단은 int 기준으로 만들고, 우선 책 내용에 집중하자!
 //
 
-#ifndef CHAPTER10_COMMON_UTILS_H
-#define CHAPTER10_COMMON_UTILS_H
+#ifndef COMMON_UTILS_H
+#define COMMON_UTILS_H
 
 /**
  * 배열 내용 출력
@@ -31,4 +31,4 @@ void printArraySimple(int array[], int length);
 void swap(int array[], int aIndex, int bIndex);
 
 
-#endif //CHAPTER10_COMMON_UTILS_H
+#endif // COMMON_UTILS_H
