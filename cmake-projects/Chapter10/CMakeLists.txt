@@ -19,6 +19,7 @@ set(COMMON_LIB_NAME ${COMMON_LIB_PROJECT})
 add_subdirectory(CommonUtils)
 add_subdirectory(BubbleSort)
 add_subdirectory(SelectionSort)
+add_subdirectory(InsertionSort)
 
 
 
