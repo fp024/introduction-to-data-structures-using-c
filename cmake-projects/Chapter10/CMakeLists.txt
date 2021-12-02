@@ -30,6 +30,7 @@ add_subdirectory(BubbleSort)
 add_subdirectory(SelectionSort)
 add_subdirectory(InsertionSort)
 add_subdirectory(HeapSort)
+add_subdirectory(MergeSort)
 
 
 
