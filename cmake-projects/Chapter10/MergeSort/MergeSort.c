@@ -24,7 +24,7 @@ void MergeTwoArea(int arr[], int left, int mid, int right) {
   int i;
 
   // 병합 한 결과를 담을 sortArr의 동적 할당.
-  int *sortArr = (int *) malloc(sizeof(int) * right + 1);
+  int *sortArr = (int *) malloc(sizeof(int) * (right + 1));
   // 정렬된 배열에 사용할 인덱스
   int sIdx = left;
 

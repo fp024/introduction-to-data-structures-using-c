@@ -134,3 +134,31 @@
 
 
 
+
+
+## 기타
+
+### 나의 오타로 인한 HEAP CORRUPTION DETECTED 오류
+
+![heap-corruption-detected](doc-resources/heap-corruption-detected.png)
+
+Ubuntu환경 GCC 나, Cygwin 등에서는 실제로 문제가 있는 코드가 있었지만 오류 메시지가 나타나지 않았었는데, Visual Studio 환경으로 선택시 위와 같은 오류가 발생했다.
+
+```c
+/* MergeSort.c 코드 일부 */
+// 문제를 발생 시키는 부분
+int *sortArr = (int *) malloc(sizeof(int) * right + 1);
+(...)
+// 오류 발생 부분
+free(sortArr);
+
+
+// 수정 코드
+int *sortArr = (int *) malloc(sizeof(int) * (right + 1));
+
+```
+
+힙 버퍼의 끝 이후에 메모리 쓰기가 감지 되었다는 메시지 관련해서...
+
+**최초에 malloc으로 int 크기만큼 배수로 생성해야하는데,  괄호를 제대로 안붙여서, 마지막 요소가 1바이트만큼만 붙여진 상태에서 만들어졌다.** 그런데 디버깅을 진행하면서 볼 때, 직접 쓰는 시점에서는 오류가 바로 발생하지 않고, 메모리 해제(free)시에 발생이 된 것 같다.  
+
