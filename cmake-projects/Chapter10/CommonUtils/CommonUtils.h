@@ -31,4 +31,21 @@ void printArraySimple(int array[], int length);
 void swap(int array[], int aIndex, int bIndex);
 
 
+/**
+ * 중간값 구하기
+ *
+ * 자바 코드로 할 때는, 아래와 같이 했었는데,
+ * https://github.com/fp024/java-study/blob/master/etc-project/src/main/java/org/fp024/java/study/sort/CommonUtils.java
+ *
+ * 여기서는 저자님 방식대로 해보자!
+ * 문제 10-1에 해당.
+ *
+ * @param array             중간 값 인덱스를 구할 배열
+ * @param firstIndex        앞쪽 범위 인덱스
+ * @param lastIndex         마지막 인덱스
+ * @return  중간 값의 인덱스
+ */
+int getMedianIndex(int array[], int firstIndex, int lastIndex);
+
+
 #endif // COMMON_UTILS_H

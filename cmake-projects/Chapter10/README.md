@@ -96,13 +96,33 @@
 
 ### 퀵 정렬(Quick Sort): 이해와 구현
 
+* 사용 변수 의미
+  * left: 정렬 대상의 가장 왼쪽 지점을 가리킴
+  * right: 정렬 대상의 가장 오른쪽 지점을 가리킴
+  * pivot: 정렬을 진행 하는데 필요한 기준점
+  * low: 피벗을 제외한 가장 왼쪽에 위치한 지점을 가리킴
+  * high: 피벗을 제외한 가장 오른쪽에 위치한 지점을 가리킴
 
+* low와 high의 이동
+  * low의 오른쪽 이동: 피벗보다 정렬의 우선순위가 낮은(큰 값) 데이터를 만날때까지.
+  * high의 왼쪽 이동: 피벗보다 우선순위가 높은(작은 값) 데이터를 만날때까지.
+  
+* low와 high의 이동은 완전히 별개임.
 
-
+  
 
 ### 퀵 정렬(Quick Sort): 성능 평가
 
+* 피벗이 제 자리를 찾아가는 과정에서 비교연산의 횟수는 데이터의 수에 해당하는 n
+  * 피벗으로 인해서 하나가 빠지는 것은 무시할만한 수준.
+* 피벗이 항상 중간에 가까운 값을 가질 때, 나뉘는 횟수 k 일 때, 데이터 수 n과의 관계는 다음과 같음
+  * k = log<sub>2</sub>n
+* 최종적인 비교 연산횟수는 O(nlog<sub>2</sub>n) 가 됨
 
+* 피벗이 끝단에 치우쳐져있을 때.
+  * k = n이 되어, O(n<sup>2</sup>) 가 되어버림
+* 중간 값 보정을 위해 별도 처리를 해줄 수도 있음.
+  * 문제 10의 media of three 처럼 정렬할 배열의 처음, 중간, 끝 인덱스 중에서 그것에 담긴 값의 중간 인덱스를 찾아 pivot 값으로 정하는 것.
 
 
 
@@ -162,3 +182,15 @@ int *sortArr = (int *) malloc(sizeof(int) * (right + 1));
 
 **최초에 malloc으로 int 크기만큼 배수로 생성해야하는데,  괄호를 제대로 안붙여서, 마지막 요소가 1바이트만큼만 붙여진 상태에서 만들어졌다.** 그런데 디버깅을 진행하면서 볼 때, 직접 쓰는 시점에서는 오류가 바로 발생하지 않고, 메모리 해제(free)시에 발생이 된 것 같다.  
 
+
+
+
+
+## Java 코드로 먼저 만들어보자!
+
+Java 코드를 만들어 먼저 수행 해보는것이 테스트 하기 편하고 이해가 쉬워서, 병합/ 퀵/ 기수 정렬은 [java-study](https://github.com/fp024/java-study/) 레파지토리의 [etc-project](https://github.com/fp024/java-study/tree/master/etc-project)에다 먼저 만들어서 동작을 확인한 후에 C 코드로 옮기자!
+
+* 병합 정렬
+  * [MergeSort 클래스](https://github.com/fp024/java-study/blob/master/etc-project/src/main/java/org/fp024/java/study/sort/MergeSort.java)
+* 퀵 정렬
+  * [QuickSort 클래스](https://github.com/fp024/java-study/blob/master/etc-project/src/main/java/org/fp024/java/study/sort/QuickSort.java)

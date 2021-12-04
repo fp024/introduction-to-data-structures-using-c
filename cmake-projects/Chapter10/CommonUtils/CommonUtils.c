@@ -25,3 +25,22 @@ void swap(int array[], int aIndex, int bIndex) {
   array[aIndex] = array[bIndex];
   array[bIndex] = temp;
 }
+
+
+int getMedianIndex(int array[], int firstIndex, int lastIndex) {
+  int indexArray[] = {firstIndex, (firstIndex + lastIndex) / 2, lastIndex};
+
+  if (array[indexArray[0]] > array[indexArray[1]]) {
+    swap(indexArray, 0, 1);
+  }
+
+  if (array[indexArray[1]] > array[indexArray[2]]) {
+    swap(indexArray, 1, 2);
+  }
+
+  if (array[indexArray[0]] > array[indexArray[1]]) {
+    swap(indexArray, 0, 1);
+  }
+
+  return indexArray[1];
+}
