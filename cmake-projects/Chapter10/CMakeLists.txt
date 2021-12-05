@@ -22,9 +22,14 @@ set(COMMON_LIB_NAME ${COMMON_LIB_PROJECT})
 set(ENHANCED_HEAP_LIB_PROJECT EnhancedHeap)
 set(ENHANCED_HEAP_LIB_NAME ${ENHANCED_HEAP_LIB_PROJECT})
 
+# 7장에서 진행했던 List Base Queue
+set(LIST_BASE_QUEUE_LIB_PROJECT ListBaseQueue)
+set(LIST_BASE_QUEUE_LIB_NAME ${LIST_BASE_QUEUE_LIB_PROJECT})
+
 
 add_subdirectory(CommonUtils)
 add_subdirectory(EnhancedHeap)
+add_subdirectory(ListBaseQueue)
 
 add_subdirectory(BubbleSort)
 add_subdirectory(SelectionSort)
@@ -32,6 +37,4 @@ add_subdirectory(InsertionSort)
 add_subdirectory(HeapSort)
 add_subdirectory(MergeSort)
 add_subdirectory(QuickSort)
-
-
-
+add_subdirectory(RadixSort)

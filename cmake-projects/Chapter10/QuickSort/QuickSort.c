@@ -31,7 +31,7 @@ int partition(int arr[], const int left, const int right) {
       low++;
     }
 
-    while (high >= left + 1 && pivotValue <= arr[high]) {
+    while (high > left && pivotValue <= arr[high]) { // high >= left + 1 이 결국은 high > left와 동일해보여 변경했다.
       high--;
     }
 
